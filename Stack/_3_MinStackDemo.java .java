@@ -81,4 +81,40 @@ class MinStack {
     }
 }
 
+public class MinStackDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        MinStack stack = new MinStack();
 
+        int choice, value;
+        do {
+            System.out.println("\n1. Push\n2. Pop\n3. Top\n4. Get Min\n5. Exit");
+            System.out.print("Enter choice: ");
+            choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter value to push: ");
+                    value = sc.nextInt();
+                    stack.push(value);
+                    break;
+                case 2:
+                    stack.pop();
+                    break;
+                case 3:
+                    System.out.println("Top element: " + stack.top());
+                    break;
+                case 4:
+                    System.out.println("Minimum element: " + stack.getMin());
+                    break;
+                case 5:
+                    System.out.println("Exiting...");
+                    break;
+                default:
+                    System.out.println("Invalid choice!");
+            }
+        } while (choice != 5);
+
+        sc.close();
+    }
+}
