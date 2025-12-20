@@ -1,4 +1,4 @@
-#Implementation of Stack using Array 
+                              /// Implementation of Stack using Array 
   
   class Stack {
     int top;
