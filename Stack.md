@@ -59,3 +59,34 @@ All basic stack operations run in:
 ├───────┤
 │ 10 │
 └───────┘
+
+
+
+
+---
+
+## 🚀 Practical Applications of Stack
+
+### 🔹 Function Calls
+Uses the **call stack** to store:
+- Function calls
+- Local variables
+- Return addresses
+
+### 🔹 Text Editors
+- **Undo / Redo** operations are implemented using stacks
+
+### 🔹 Web Browsers
+- **Back and Forward navigation** uses stack behavior
+
+### 🔹 Parsing & Expression Evaluation
+- Balanced parentheses `() { } [ ]`
+- Binary expression evaluation
+- Infix → Postfix conversion
+
+### 🔹 Memory Management
+Stack memory is used for:
+- Method execution
+- Local variables  
+- Faster than heap memory
+
