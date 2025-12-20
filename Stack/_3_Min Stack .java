@@ -32,32 +32,53 @@ minStack.getMin(); // return -2
 
 
 
+import java.util.Scanner;
+import java.util.Stack;
+
 class MinStack {
-    Stack<Integer> st;
-    Stack<Integer> min;
+    private Stack<Integer> st;
+    private Stack<Integer> min;
+
     public MinStack() {
-        st=new Stack<>();
-        min=new Stack<>();
+        st = new Stack<>();
+        min = new Stack<>();
     }
-    
+
     public void push(int val) {
         st.push(val);
-        if(min.isEmpty() || val<=min.peek()){
+        if (min.isEmpty() || val <= min.peek()) {
             min.push(val);
         }
+        System.out.println("Pushed: " + val);
     }
+
     public void pop() {
-        int remove=st.pop();
-        if(remove == min.peek()){
+        if (st.isEmpty()) {
+            System.out.println("Stack is empty. Cannot pop.");
+            return;
+        }
+        int removed = st.pop();
+        if (removed == min.peek()) {
             min.pop();
         }
+        System.out.println("Popped: " + removed);
     }
+
     public int top() {
+        if (st.isEmpty()) {
+            System.out.println("Stack is empty.");
+            return -1;
+        }
         return st.peek();
     }
-    
+
     public int getMin() {
+        if (min.isEmpty()) {
+            System.out.println("Stack is empty.");
+            return -1;
+        }
         return min.peek();
     }
 }
+
 
