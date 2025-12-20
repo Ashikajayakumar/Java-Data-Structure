@@ -51,6 +51,7 @@ All basic stack operations run in:
 ---
 
 ## 🖼️ Visual Representation of Stack
+```
   ┌────┐
   │ 30 │ ← Top
   ├────┤
@@ -59,7 +60,7 @@ All basic stack operations run in:
   │ 10 │
   └────┘
 
-
+```
 
 
 ---
