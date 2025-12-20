@@ -39,7 +39,7 @@ and remove them from the top.
 +-----------+-----------------------------------------------+
 
 
-** ⏱ Time Complexity  **
+ ⏱ Time Complexity  
 
 All basic stack operations run in:  
 O(1) – Constant Time
@@ -54,7 +54,7 @@ O(1) – Constant Time
    └───────┘
 
 
-# ** 🚀 Practical Applications of Stack **
+ 🚀 Practical Applications of Stack 
 
 ** 🔹 Function Calls  **
 Uses call stack to store:  
@@ -62,20 +62,20 @@ Uses call stack to store:
 • Local variables  
 • Return addresses  
 
-** 🔹 Text Editors  **
+🔹 Text Editors 
 Undo / Redo operations are implemented  
 using stacks.
 
-** 🔹 Web Browsers  **
+🔹 Web Browsers 
 Back and Forward navigation uses  
 stack behavior.
 
-** 🔹 Parsing & Expression Evaluation  **
+🔹 Parsing & Expression Evaluation  
 • Balanced parentheses () {} []  
 • Binary expression evaluation  
 • Infix → Postfix conversion  
 
-** 🔹 Memory Management  **
+🔹 Memory Management  
 Stack memory is used for:  
 • Method execution  
 • Local variables  
