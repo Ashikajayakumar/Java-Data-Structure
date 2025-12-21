@@ -13,22 +13,22 @@ i=0  prices=8
 
 i=1  prices=4
   stack is not empty , 4<=8 
-  int pop=st.pop() #pop=0
-  prices[pop]=prices[pop]-prices[i]  # prices[0]=prices[0]-prices[1]   prices[0]=8-4=4  
-  prices=[4,4,6,2,3]   stack=[1]
+  int pop=st.pop()                                    #pop=0
+  prices[pop]=prices[pop]-prices[i]                  # prices[0]=prices[0]-prices[1]   prices[0]=8-4=4  
+  prices=[4,4,6,2,3]                                  stack=[1]
 
 i=2   prices=6
   stack is not empty , 6<=4 (X)  ,so push to stack=[1,2]
 
 i=3   prices = 2
   stack is not empty , 2<=6  
-  int pop=st.pop() # pop=2
-  prices[pop]=prices[pop]-prices[i]  # prices[2]=prices[2]-prices[3]  #prices[2]=6-2=4
-  prices=[4,4,4,2,3]   stack=[1]
+  int pop=st.pop()                                         # pop=2
+  prices[pop]=prices[pop]-prices[i]                        # prices[2]=prices[2]-prices[3]  #prices[2]=6-2=4
+  prices=[4,4,4,2,3]                                        stack=[1]
 
-  int pop=st.pop() # pop=1
-  prices[pop]=prices[pop]-prices[i]  # prices[1]=prices[1]-prices[3]  #prices[2]=4-2=2
-  prices=[4,2,4,2,3]   stack=[3]
+  int pop=st.pop()                                         # pop=1
+  prices[pop]=prices[pop]-prices[i]                        # prices[1]=prices[1]-prices[3]  #prices[2]=4-2=2
+  prices=[4,2,4,2,3]                                       stack=[3]
 
 
 i=4    prices= 2
