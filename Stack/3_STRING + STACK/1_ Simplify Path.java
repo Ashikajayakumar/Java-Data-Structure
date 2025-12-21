@@ -8,7 +8,7 @@ Multiple consecutive slashes such as '//' and '///' are treated as a single slas
 Any sequence of periods that does not match the rules above should be treated as a valid directory or file name.
   For example, '...' and '....' are valid directory or file names.
 
-/,//,///    -> Split
+/,         -> Split
 "","."      ->Ignore
 "..","..."  -> pop the last element
 
