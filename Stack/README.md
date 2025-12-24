@@ -24,9 +24,9 @@ and Math.
 ---
 
 ## 🔹 2. Array + Stack
-- [Next Greater Element]([2_ARRAY%20%2B%20STACK/3_%20Final%20Prices%20With%20a%20Special%20Discount%20in%20a%20Shop.java](https://github.com/Ashikajayakumar/Java-Data-Structure/blob/main/Stack/2_ARRAY%20%2B%20STACK/3_%20Final%20Prices%20With%20a%20Special%20Discount%20in%20a%20Shop.java))
+- [Next Greater Element][2_ARRAY%20%2B%20STACK/3_%20Final%20Prices%20With%20a%20Special%20Discount%20in%20a%20Shop.java]
 - [Daily Temperatures](2_ARRAY%20+%20STACK/2_Daily%20Temperatures.java)
-- [Final Prices With a Special Discount](2_ARRAY%20+%20STACK/3_Final%20Prices%20With%20a%20Special%20Discount%20in%20a%20Shop.java)
+- [Final Prices With a Special Discount](https://github.com/Ashikajayakumar/Java-Data-Structure/blob/main/Stack/2_ARRAY%20%2B%20STACK/3_%20Final%20Prices%20With%20a%20Special%20Discount%20in%20a%20Shop.java)
 
 ---
 
