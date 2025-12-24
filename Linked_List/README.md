@@ -56,9 +56,10 @@ This repository contains **Linked List concepts and practice questions** for int
 
 ## 1. Singly Linked List – Basics
 
-### **Operations**: **Insertion** (beginning, end, specific),
-                    **Deletion** (beginning, end, specific), 
-                    **Traversal** (forward, backward/recursion
+### **Operations**: 
+**Insertion** (beginning, end, specific),
+**Deletion** (beginning, end, specific), 
+**Traversal** (forward, backward/recursion)
 
 ---
 
@@ -90,11 +91,10 @@ This repository contains **Linked List concepts and practice questions** for int
 
 ## 3. Doubly Linked List – Basics
 
-### **Operations**: **Insertion** (beginning, end, specific), 
-                    **Deletion** (beginning, end, specific), 
-                    **Traversal** (forward, backward/recursion
-
-
+### **Operations**: 
+**Insertion** (beginning, end, specific),
+**Deletion** (beginning, end, specific), 
+**Traversal** (forward, backward/recursion).
 
 ---
 
