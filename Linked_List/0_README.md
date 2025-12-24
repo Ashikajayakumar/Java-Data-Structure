@@ -58,8 +58,8 @@ The last node points back to the **first node**, forming a loop.
 - Traversal possible in **both directions**
 
 ```
-    ┌──────────────────────┐
-    ↓                      │
+ ┌──────────────────────┐
+ ↓                      │
 [10] ⇄ [20] ⇄ [30] ⇄ [40]
 ↑ ↓
 └──────────────────────┘
@@ -157,8 +157,7 @@ public class Geeks {
     }
 }
 Output
-csharp
-Copy code
+
 [One, Two, Three, Four, Five]
 ```
 📌 Elements are printed in insertion order.
@@ -190,8 +189,10 @@ ll.add(1, "For");
 
 System.out.println(ll);
 ```
-Output:
+```Output:
 [Geeks, For, Geeks]
+```
+
 🔹 Updating Elements
 ```
 ll.set(1, "For");
