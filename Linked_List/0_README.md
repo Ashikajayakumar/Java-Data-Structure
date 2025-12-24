@@ -20,3 +20,6 @@ A **Linked List** is a linear data structure made up of **nodes**, where each no
 Each node points to the **next node**.  
 The last node points to **null**.
 
+Head
+↓
+[10] → [20] → [30] → null
