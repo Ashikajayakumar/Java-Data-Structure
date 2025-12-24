@@ -15,9 +15,9 @@ and Math.
 
 ## 🔹 1. Stack – Basic Problems
 - [Valid Parentheses](1_Stack_Basic/1_Valid%20Parentheses.java)
-- [Find the Middle Element](1_Stack_Basic/2_Find%20the%20middle%20Element.java)
+- [Find the Middle Element](1_Stack_Basic/2_Find%20the%20middle%20Element%20.java)
 - [Min Stack](1_Stack_Basic/3_MinStack.java)
-- [Reverse a Stack](1_Stack_Basic/4_Reverse%20a%20Stack.java)
+- [Reverse a Stack](1_Stack_Basic/4_Reverse%20a%20Stack%20.java)
 - [BaseBall Game](1_Stack_Basic/5_BaseBase%20Game.java)
 - [Backspace String Compare](1_Stack_Basic/6_Backspace%20String%20Compare.java)
 
