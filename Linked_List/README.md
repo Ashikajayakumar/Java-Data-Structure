@@ -56,22 +56,7 @@ This repository contains **Linked List concepts and practice questions** for int
 
 ## 1. Singly Linked List – Basics
 
-### **Operations**
-- **Insertion**
-  - At beginning
-  - At end
-  - At a specific position
-- **Deletion**
-  - At beginning
-  - At end
-  - At a specific position
-- **Traversal**
-  - Forward
-  - Backward (recursion)
-
-### **Practice Examples**
-- Implement a singly linked list (basic operations)
-- Print linked list in reverse
+### **Operations**: **Insertion** (beginning, end, specific), **Deletion** (beginning, end, specific), **Traversal** (forward, backward/recursion
 
 ---
 
@@ -103,23 +88,9 @@ This repository contains **Linked List concepts and practice questions** for int
 
 ## 3. Doubly Linked List – Basics
 
-### **Operations**
-- **Insertion**
-  - At beginning
-  - At end
-  - At a specific position
-- **Deletion**
-  - At beginning
-  - At end
-  - At a specific position
-- **Traversal**
-  - Forward
-  - Backward
+### **Operations**: **Insertion** (beginning, end, specific), **Deletion** (beginning, end, specific), **Traversal** (forward, backward/recursion
 
-### **Practice Examples**
-- Implement Doubly Linked List
-- Flatten a multilevel doubly linked list
-- LRU Cache implementation (using doubly linked list + hashmap)
+
 
 ---
 
