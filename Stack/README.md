@@ -24,7 +24,7 @@ and Math.
 ---
 
 ## 🔹 2. Array + Stack
-- [Next Greater Element](2_ARRAY%20+%20STACK/1_Next%20Greater%20Element.java)
+- [Next Greater Element](2_ARRAY%20%2B%20STACK/3_%20Final%20Prices%20With%20a%20Special%20Discount%20in%20a%20Shop.java)
 - [Daily Temperatures](2_ARRAY%20+%20STACK/2_Daily%20Temperatures.java)
 - [Final Prices With a Special Discount](2_ARRAY%20+%20STACK/3_Final%20Prices%20With%20a%20Special%20Discount%20in%20a%20Shop.java)
 
