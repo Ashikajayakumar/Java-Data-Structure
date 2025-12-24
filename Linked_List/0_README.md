@@ -12,7 +12,7 @@ A **Linked List** is a linear data structure made up of **nodes**, where each no
 📌 Unlike arrays, linked lists **do not store elements in contiguous memory locations**.
 
 ---
-```
+
 ## 2️⃣ Why Use Linked List Instead of Array?
 
 - **Dynamic Size**: LinkedList grows or shrinks dynamically at runtime.  
@@ -35,7 +35,7 @@ A **Linked List** is a linear data structure made up of **nodes**, where each no
 | Extra Space | No extra space | Extra memory for pointers |
 | Resizing | Needs reallocation | Automatic |
 
-```
+
 ---
 
 ## 2️⃣ Types of Linked Lists
@@ -107,25 +107,25 @@ The last node points back to the **first node**, forming a loop.
 
 
 ## 5️⃣ Core Operations
-🔹 Core Linked List Operations
 
-Insert – Add a node at the beginning, end, or specific position.
 
-Delete – Remove a node from the beginning, end, or specific position.
+1.Insert – Add a node at the beginning, end, or specific position.
 
-Traversal – Visit or print all nodes in the list.
+2.Delete – Remove a node from the beginning, end, or specific position.
 
-Search – Find a node by its value.
+3.Traversal – Visit or print all nodes in the list.
 
-Update – Modify the value of a node at a specific position.
+4.Search – Find a node by its value.
 
-Count – Count the total number of nodes in the list.
+5.Update – Modify the value of a node at a specific position.
 
-Reverse – Reverse the order of nodes in the list.
+6.Count – Count the total number of nodes in the list.
 
-Sort – Arrange the nodes in ascending or descending order.
+7.Reverse – Reverse the order of nodes in the list.
 
-Merge – Combine two linked lists into a single list.
+8.Sort – Arrange the nodes in ascending or descending order.
+
+9.Merge – Combine two linked lists into a single list.
 
 ---
 
