@@ -38,7 +38,7 @@ A **Linked List** is a linear data structure made up of **nodes**, where each no
 
 ---
 
-## 2️⃣ Types of Linked Lists
+## 4️⃣  Types of Linked Lists
 
 ### 🔹 Singly Linked List
 
@@ -93,7 +93,7 @@ The last node points back to the **first node**, forming a loop.
 
 ---
 
-## 3️⃣ Time Complexity
+## 5️⃣ Time Complexity
 
 | Operation | Time Complexity |
 |---------|----------------|
@@ -106,7 +106,7 @@ The last node points back to the **first node**, forming a loop.
 
 
 
-## 5️⃣ Core Operations
+## 6️⃣ Core Operations
 
 
 1.Insert – Add a node at the beginning, end, or specific position.
@@ -129,7 +129,7 @@ The last node points back to the **first node**, forming a loop.
 
 ---
 
-## 6️⃣ Practical Applications
+## 7️⃣ Practical Applications
 
 ✔ Dynamic memory allocation  
 ✔ Implementation of **Stacks & Queues**  
@@ -140,7 +140,7 @@ The last node points back to the **first node**, forming a loop.
 
 ---
 
-## 7️⃣ Advantages
+## 8️⃣ Advantages
 
 ✅ Dynamic size (no fixed memory)  
 ✅ Efficient insertion & deletion  
@@ -148,7 +148,7 @@ The last node points back to the **first node**, forming a loop.
 
 ---
 
-## 8️⃣ Disadvantages
+## 9️⃣ Disadvantages
 
 ❌ Extra memory required for pointers  
 ❌ No random access (sequential access only)  
@@ -156,7 +156,7 @@ The last node points back to the **first node**, forming a loop.
 
 ---
 
-## 9️⃣ LinkedList in Java
+## 🔟  LinkedList in Java
 
 `LinkedList` is part of the **Java Collection Framework** and is present in the `java.util` package.
 
@@ -198,7 +198,7 @@ Output
 ```
 📌 Elements are printed in insertion order.
 
-1️⃣1️⃣ Hierarchy of LinkedList
+ Hierarchy of LinkedList
 ```
 
 Iterable
@@ -209,7 +209,7 @@ List        Deque
      ↘      ↙
        LinkedList
 ```
-1️⃣2️⃣ Constructors of LinkedList
+ Constructors of LinkedList
 
 1. Empty LinkedList
 ```
@@ -219,7 +219,7 @@ LinkedList list = new LinkedList();
 ```
 LinkedList list = new LinkedList(Collection c);
 ```
-1️⃣3️⃣ Performing Operations on LinkedList
+ Performing Operations on LinkedList
 🔹 Adding Elements
 ```
 LinkedList<String> ll = new LinkedList<>();
