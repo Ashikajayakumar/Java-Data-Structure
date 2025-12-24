@@ -33,9 +33,9 @@ Each node contains **two pointers**:
 
 - `prev` → previous node
 - `next` → next node
-
+```
 null ← [10] ⇄ [20] ⇄ [30] → null
-
+```
 
 ---
 
