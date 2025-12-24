@@ -4,13 +4,6 @@ This folder contains **Stack theory, implementations, and interview problems**
 organized from **basic to advanced**, including combinations with Arrays, Strings,
 and Math.
 
----
-
-1. [0_Introduction](0_Introduction/)
-2. [1_Stack_Basic](1_Stack_Basic/)
-3. [2_ARRAY + STACK](2_ARRAY%20+%20STACK/)
-4. [3_STRING + STACK](3_STRING%20+%20STACK/)
-5. [4_MATH+STACK](4_MATH+STACK/)
 
 
 ## 🔹 0. Introduction
