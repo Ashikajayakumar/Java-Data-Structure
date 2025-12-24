@@ -31,7 +31,7 @@ and Math.
 ---
 
 ## 🔹 3. String + Stack
-- [Simplify Path]3_STRING%20%2B%20STACK/1_%20Simplify%20Path.java)
+- [Simplify Path](3_STRING%20%2B%20STACK/1_%20Simplify%20Path.java)
 - [Remove All Adjacent Duplicates](3_STRING%20+%20STACK/2_Remove%20All%20Adjacent%20Duplicates%20In%20String.java)
 - [Minimum Remove to Make Valid Parentheses](3_STRING%20+%20STACK/3_Minimum%20Remove%20to%20Make%20Valid%20Parentheses.java)
 - [Make The String Great](3_STRING%20+%20STACK/4_Make%20The%20String%20Great.java)
