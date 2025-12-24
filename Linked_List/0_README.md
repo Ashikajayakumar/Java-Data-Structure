@@ -75,9 +75,11 @@ Head → 10 → 20 → 30 → null
 null ← 10 ⇄ 20 ⇄ 30 → null
 
 ### Circular Linked List
+```
 10 → 20 →  30
 ↑           ↓
 └───────────┘
+```
 ---
 
 ## 5️⃣ Core Operations
