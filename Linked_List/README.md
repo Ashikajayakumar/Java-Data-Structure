@@ -54,7 +54,7 @@ This repository contains **Linked List concepts and practice questions** for int
 
 ---
 
-## 1️⃣ Singly Linked List – Basics
+## 1. Singly Linked List – Basics
 
 ### **Operations**
 - **Insertion**
@@ -75,7 +75,7 @@ This repository contains **Linked List concepts and practice questions** for int
 
 ---
 
-## 2️⃣ Singly Linked List – Common Patterns
+## 2. Singly Linked List – Common Patterns
 
 | Topic | Problem | Difficulty |
 |-------|---------|-----------|
@@ -101,7 +101,7 @@ This repository contains **Linked List concepts and practice questions** for int
 
 ---
 
-## 3️⃣ Doubly Linked List – Basics
+## 3. Doubly Linked List – Basics
 
 ### **Operations**
 - **Insertion**
@@ -123,7 +123,7 @@ This repository contains **Linked List concepts and practice questions** for int
 
 ---
 
-## 4️⃣ Advanced / Interview Patterns
+## 4. Advanced / Interview Patterns
 
 | Topic | Problem | Difficulty |
 |-------|---------|-----------|
@@ -138,7 +138,7 @@ This repository contains **Linked List concepts and practice questions** for int
 
 ---
 
-## 5️⃣ Very High Frequency Interview Questions
+## 5. Very High Frequency Interview Questions
 
 - Detect and remove loop in linked list
 - Intersection of two linked lists
