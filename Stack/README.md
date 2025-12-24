@@ -42,4 +42,5 @@ and Math.
 ## 🔹 4. Math + Stack
 - [Evaluate Reverse Polish Notation](4_MATH%20+%20STACK/1_Evaluate%20Reverse%20Polish%20Notation.java)
 - [Basic Calculator](4_MATH%20+%20STACK/2_Basic%20Calculator.java)
+- [Basic calculator](4_MATH%2BSTACK/3_Basic%20Calculator%20II.java)
 - [Mini Parser](4_MATH%20+%20STACK/3_Mini%20Parser.java)
