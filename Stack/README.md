@@ -5,10 +5,7 @@ organized from **basic to advanced**, including combinations with Arrays, String
 and Math.
 
 ---
-# 📚 Stack – Algorithms & Interview Problems (Java)
 
-## Topics
-0. README.md 
 1. [0_Introduction](0_Introduction/)
 2. [1_Stack_Basic](1_Stack_Basic/)
 3. [2_ARRAY + STACK](2_ARRAY%20+%20STACK/)
