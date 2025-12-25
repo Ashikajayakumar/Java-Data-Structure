@@ -44,8 +44,8 @@ Step : 4
 
   
       i = 2 → height = 5
-      5 > 1  → Condition FALSE
-      5 > 1 → push
+      5 < 2  → Condition FALSE
+      5 < 2 → push
      stack = [-1, 1, 2]
 
   Step : 5
@@ -53,8 +53,8 @@ Step : 4
 
   
       i = 3 → height = 6
-      6 > 1  → Condition FALSE
-      6 > 1 → push
+      6 < 5 → Condition FALSE
+      6 < 5  → push
      stack = [-1, 1, 2, 3]
 
   Step : 6
@@ -62,6 +62,8 @@ Step : 4
 
 
         i = 4 → height = 2
+        2 < 6 → Condition True 
+  
         Now pop until stack top is smaller.
         Pop index 3 (height 6)
         int hei = h[st.pop()];                    # st.pop()= 3  -> h=6
@@ -71,7 +73,8 @@ Step : 4
                                                
 
 
-
+        2 < 5 → Condition True
+  
         Pop index 2 (height 5)
         int hei = h[st.pop()];                    # st.pop()= 2 -> h= 5
         hei =  5                                   stack = [-1,1]
