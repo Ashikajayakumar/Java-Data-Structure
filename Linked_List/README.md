@@ -32,22 +32,9 @@ A **Linked List** is a linear data structure made up of **nodes**, each containi
 
 ---
 
-## Advantages
-
-- Dynamic size  
-- Efficient insertion/deletion  
-- Maintains insertion order  
-
----
-
-## Disadvantages
-
-- Extra memory for pointers  
-- Sequential access only  
-- More complex than arrays  
 
 
 
----
+
 
 
