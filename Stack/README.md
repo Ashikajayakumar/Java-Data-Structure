@@ -44,3 +44,8 @@ and Math.
 - [Basic Calculator](4_MATH%20+%20STACK/2_Basic%20Calculator.java)
 - [Basic calculator](4_MATH%2BSTACK/3_Basic%20Calculator%20II.java)
 - [Mini Parser](4_MATH%2BSTACK/4_Mini%20Parser.java)
+
+---
+## 🔹 5. ADVANCED MONOTONIC STACK
+-[Largest Rectangle in Histogram](5_ADVANCED%20MONOTONIC%20STACK/1_Largest%20Rectangle%20in%20Histogram.java)
+
