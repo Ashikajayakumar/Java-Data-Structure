@@ -48,4 +48,5 @@ and Math.
 ---
 ## 🔹 5. ADVANCED MONOTONIC STACK
 - [Largest Rectangle in Histogram](5_ADVANCED%20MONOTONIC%20STACK/1_Largest%20Rectangle%20in%20Histogram.java)
+- [Maximum Rectangle](5_ADVANCED%20MONOTONIC%20STACK/2_Maximum%20Rectangle.java)
 
