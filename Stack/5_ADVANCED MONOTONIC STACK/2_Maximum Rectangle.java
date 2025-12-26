@@ -171,17 +171,27 @@ Step : 2
     st.push(4);                               stack = [-1, 1, 4]
       
 
+Step : 8
+  Iteration : 4
+
+    height = h[st.pop()];                    # st.pop() = 4 ->h= 2
+    height = 2
+    width = h.length - st.peek() - 1;        # width = 5 - -1 -1 = 3
+    max = Math.max(max, height * width);     # max= Math.max(4, 2* 3)
+    max=6
 
 
 
 Step : 8
-  Iteration : 5
+  Iteration : 1
 
     height = h[st.pop()];                    # st.pop() = 1 ->h= 1
     height = 1
     width = h.length - st.peek() - 1;        # width = 5 - (-1) -1 = 5
     max = Math.max(max, height * width);     # max= Math.max(4, 1* 5)
     max=6
+
+
 
   
 Java Implementation 
