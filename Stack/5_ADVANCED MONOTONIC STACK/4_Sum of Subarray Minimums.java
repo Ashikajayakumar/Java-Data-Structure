@@ -56,7 +56,7 @@ Iteration : 2
   while (!stack.isEmpty() && arr[stack.peek()] >= arr[i]) {      #arr[1] >= arr[2] → 1 >= 2  ❌
         stack.pop();                                            
     } 
-  left[i] = stack.isEmpty() ? i + 1 : i - stack.peek();          #left[1]= i- st.peek()= 2-1=1
+  left[i] = stack.isEmpty() ? i + 1 : i - stack.peek();          #left[2]= i- st.peek()= 2-1=1
     st=[1,2]
 
    /* --------------------------------------------------- ------------------------------*/
@@ -66,7 +66,7 @@ Iteration : 3
    while (!stack.isEmpty() && arr[stack.peek()] >= arr[i]) {      #arr[2] >= arr[3] → 2 >= 4  ❌
         stack.pop();                                            
     } 
-  left[i] = stack.isEmpty() ? i + 1 : i - stack.peek();           #left[1]= i- st.peek()= 3-2=1
+  left[i] = stack.isEmpty() ? i + 1 : i - stack.peek();           #left[3]= i- st.peek()= 3-2=1
     st=[1,2,3]                                                                      
 
    /* --------------------------------------------------- ------------------------------*/
@@ -127,7 +127,7 @@ Iteration : 0
       while (!stack.isEmpty() && arr[stack.peek()] > arr[i]) {           #arr[1]>arr[0]  1 > 3 ❌ → no pop
                 stack.pop();                                             # st=[1]
             }
-     right[i] = stack.isEmpty() ? n - i : stack.peek() - i;             #right[1]= stack.peek() - i =1-0=1
+     right[i] = stack.isEmpty() ? n - i : stack.peek() - i;             #right[0]= stack.peek() - i =1-0=1
      stack.push()                                                       # st=[1,0]
 
    /* --------------------------------------------------- ------------------------------*/
