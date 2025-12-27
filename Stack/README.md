@@ -51,4 +51,5 @@ and Math.
 - [Maximum Rectangle](5_ADVANCED%20MONOTONIC%20STACK/2_Maximum%20Rectangle.java)
 - [Trapping Rain Water](5_ADVANCED%20MONOTONIC%20STACK/3_Trapping%20Rain%20Water.java)
 - [Sum of Subarray Minimums](5_ADVANCED%20MONOTONIC%20STACK/4_Sum%20of%20Subarray%20Minimums.java)
+- [Sum ofSubarray Ranges](5_ADVANCED%20MONOTONIC%20STACK/5_Sum%20%20of%20Sumarray%20Ranges.java)
 
