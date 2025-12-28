@@ -56,3 +56,4 @@ and Math.
 ## 🔹 5. 6_ADVANCED INTERVIEW
 - [Decode String](6_ADVANCED%20INTERVIEW%20/1_%20Decode%20String.java)
 - [Asteroid Collision](6_ADVANCED%20INTERVIEW%20/2_%20Asteroid%20Collision.java)
+- [123 Pattern](6_ADVANCED%20INTERVIEW%20/3_123%20Pattern.java)
