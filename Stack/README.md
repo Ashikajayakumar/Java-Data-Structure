@@ -53,3 +53,5 @@ and Math.
 - [Sum of Subarray Minimums](5_ADVANCED%20MONOTONIC%20STACK/4_Sum%20of%20Subarray%20Minimums.java)
 - [Sum ofSubarray Ranges](5_ADVANCED%20MONOTONIC%20STACK/5_Sum%20%20of%20Sumarray%20Ranges.java)
 
+## 🔹 5. 6_ADVANCED INTERVIEW
+- [Decode String](6_ADVANCED%20INTERVIEW%20/1_%20Decode%20String.java)
