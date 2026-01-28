@@ -3,7 +3,7 @@
 
 head → 1 → 2 → 3 → 4 → NULL
 
-                                         
+                                        
 prev = NULL
 current = 1
 next = NULL
