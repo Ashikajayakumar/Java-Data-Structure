@@ -1,4 +1,4 @@
-<h1 align="center"><b> 📘⭐ ARRAYS IN JAVA ⭐📘 </b></h1>
+<h1 align="center"><b> ARRAYS IN JAVA  </b></h1>
 
 <h2 align="center"><b> What is an Array ? </b></h2>
 
@@ -154,6 +154,3 @@ void printArray(int[] arr) {
 
 ---
 
-<h4 align="center"><b> 🎯 One-Line Summary </b></h4>
-
-Arrays store fixed-size elements of the same data type and allow fast access using index.
