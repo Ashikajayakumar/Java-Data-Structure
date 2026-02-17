@@ -1,4 +1,4 @@
-                                       Reverse Linked List
+                                        Reverse Linked List
 
 
 head → 1 → 2 → 3 → 4 → NULL
