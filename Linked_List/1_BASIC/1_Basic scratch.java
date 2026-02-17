@@ -6,7 +6,7 @@ Singly Linked List
           -Travseral (forward,backward)
 
   
-
+ 
 class Node{
     int data;
     Node next;
