@@ -21,19 +21,33 @@ Reverse the each array
          [8,5,2],
          [9,6,3]]
 
-
+code:
+  class Solution {
+    public void rotate(int[][] matrix) {
+        int n = matrix.length;
+        int temp;
+        for (int i=0;i<n;i++) {
+            for (int j=i;j<n;j++) {
+                temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temp;
+            }
+        }
+        for (int i=0;i<n;i++) {
+            for (int j=0,k=n-1;j<k;j++,k--) {
+                temp = matrix[i][j];
+                matrix[i][j] = matrix[i][k];
+                matrix[i][k] = temp;
+            }
+        }
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------
   ✅ Your Logic (Correct Approach)
-
 You are doing it in 2 steps:
 
 1️⃣ Transpose
 2️⃣ Reverse each row
-
-
-This is the standard optimal solution.
-
-Time Complexity → O(n²)
-Space Complexity → O(1)
 
 🔹 Step 1: Transpose the Matrix
 Code:
@@ -61,7 +75,7 @@ After transpose:
 2 5 8
 3 6 9
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 🔹 Step 2: Reverse Each Row
 Code:
 for (int i=0;i<n;i++) {
