@@ -3,7 +3,7 @@
 
 
 
-# 📚 Linked List Overview (Java)
+# 📚 Linked List Overview (Java)   
 
 A **Linked List** is a linear data structure made up of **nodes**, each containing data and a pointer to the next node.
 
