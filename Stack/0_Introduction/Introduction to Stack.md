@@ -1,6 +1,6 @@
 # 📚 Stack Data Structure (Java)
 
-## 1️⃣ What is a Stack?
+## 1️⃣ What is a Stack?   
 
 A **Stack** is a linear data structure that follows the  
 **LIFO (Last-In, First-Out)** principle.
