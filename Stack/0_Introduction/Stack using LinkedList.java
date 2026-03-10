@@ -1,4 +1,5 @@
                                           Implementation of Stack Using the Linked List
+                                            
 
 class Stack{
     class Node{
