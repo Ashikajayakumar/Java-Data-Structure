@@ -17,27 +17,23 @@ Explanation: None of the pair makes a sum of 0
 Input: arr[] = [11], target = 11
 Output: false
 
-
-import java.util.HashSet;
-
-class Solution {
+```
+  
+  class Solution {
     boolean twoSum(int arr[], int target) {
-
-        HashSet<Integer> set = new HashSet<>();
-
-        for(int i = 0; i < arr.length; i++) {
-
-            int res = target - arr[i];
-
-            if(set.contains(res)) {
+        // code here
+        HashSet<Integer> set=new HashSet<>();
+        for(int i=0;i<arr.length;i++){
+            int res=target-arr[i];
+            if(set.contains(res)){
                 return true;
             }
-
             set.add(arr[i]);
         }
-
         return false;
     }
 }
+
+```
 
 
