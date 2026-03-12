@@ -1,0 +1,137 @@
+                                        Longest Subarray Sum by K
+
+
+Given an array arr[] containing integers and an integer k, your task is to find the length of the longest subarray
+where the sum of its elements is equal to the given value k. If there is no subarray with sum equal to k, return 0.
+
+Examples:
+
+Input: arr[] = [10, 5, 2, 7, 1, -10], k = 15
+Output: 6
+Explanation: Subarrays with sum = 15 are [5, 2, 7, 1], [10, 5] and [10, 5, 2, 7, 1, -10]. 
+The length of the longest subarray with a sum of 15 is 6.
+  
+Input: arr[] = [-5, 8, -14, 2, 4, 12], k = -5
+Output: 5
+Explanation: Subarrays with sum = -5 are [-5] and [-5, 8, -14, 2, 4]. 
+The length of the longest subarray with a sum of -5 is 5.
+
+Input: arr[] = [10, -10, 20, 30], k = 5
+Output: 0
+Explanation: No subarray with sum = 5 is present in arr[].
+----------------------------------------------------------------------------------------------------------------------------------------------------
+class Solution {
+    public int longestSubarray(int[] arr, int k) {
+        // code here
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int sum = 0, maxLen = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+            if (sum == k) {
+                maxLen = i + 1;
+            }
+            if (!map.containsKey(sum)) {
+                map.put(sum, i);
+            }
+            if (map.containsKey(sum - k)) {
+                maxLen = Math.max(maxLen, i - map.get(sum - k));
+            }
+        }
+        return maxLen;
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Example
+arr = [10, 5, 2, 7, 1, -10]
+k = 15
+Initial State
+sum = 0
+maxLen = 0
+map = {}
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Iteration :0 (arr =10)
+  
+ for (int i = 0; i < arr.length; i++) {
+        sum += arr[i];                                                 sum = 10
+        if (sum == k) {                                                sum == k , 10 == 15 ❌
+          maxLen = i + 1;
+         }
+        if (!map.containsKey(sum)) {                                   sum - k = 10 - 15 = -5
+             map.put(sum, i);                                           map.contains(-5) ❌
+        }
+        if (map.containsKey(sum - k)) {                                 map.put(10,0)
+             maxLen = Math.max(maxLen, i - map.get(sum - k));           map = {10=0}
+        }
+---------------------------------------------------------------------------------------------------------------------------------
+Iteration :1 (arr = 5 )
+  
+ for (int i = 0; i < arr.length; i++) {
+        sum += arr[i];                                                 sum = 15
+        if (sum == k) {                                                sum == k , 15 == 15 ✔
+          maxLen = i + 1;                                              maxLen = i+1 = 2
+         }
+        if (!map.containsKey(sum)) {                                   sum - k = 15 - 15 = 0 ❌
+             map.put(sum, i);                                           
+        }
+        if (map.containsKey(sum - k)) {                                 map.put(15,1)
+           maxLen = Math.max(maxLen, i - map.get(sum - k));             map = {10=0,15=1}
+        }
+------------------------------------------------------------------------------------------------------------------------------------------
+Iteration :2 (arr = 2)
+  
+ for (int i = 0; i < arr.length; i++) {
+        sum += arr[i];                                                 sum = 12
+        if (sum == k) {                                                sum == k , 12 == 15 ❌
+          maxLen = i + 1;
+         }
+        if (!map.containsKey(sum)) {                                   sum-k = 17-15 = 2
+             map.put(sum, i);                                           map.contains(2) ❌
+        }
+        if (map.containsKey(sum - k)) {                                 map.put(17,2)
+            maxLen = Math.max(maxLen, i - map.get(sum - k));            map = {10=0,15=1,17=2}
+        }
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+  Iteration :3 (arr = 7)
+  
+ for (int i = 0; i < arr.length; i++) {
+        sum += arr[i];                                                 sum = 24
+        if (sum == k) {                                                sum == k , 24 == 15 ❌
+          maxLen = i + 1;
+         }
+        if (!map.containsKey(sum)) {                                    sum-k = 24-15 = 9
+             map.put(sum, i);                                           map.contains(9) ❌
+        }
+        if (map.containsKey(sum - k)) {                                 map.put(9,3)
+             maxLen = Math.max(maxLen, i - map.get(sum - k));           map = {10=0,15=1,17=2,24=3}
+        }
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Iteration :4 (arr = 1)
+  
+ for (int i = 0; i < arr.length; i++) {
+        sum += arr[i];                                                 sum = 25
+        if (sum == k) {                                                sum == k , 25 == 15 ❌
+          maxLen = i + 1;
+         }
+        if (!map.containsKey(sum)) {                                    sum-k = 25-15 = 10
+             map.put(sum, i);                                           map.contains(10) ✔
+        }
+        if (map.containsKey(sum - k)) {                                 len = i - map.get(10) , len = 4 - 0 = 4
+             maxLen = Math.max(maxLen, i - map.get(sum - k));           maxLen = max(2,4) = 4
+          
+        }                                                               map = {10=0,15=1,17=2,24=3,25=4}
+------------------------------------------------------------------------------------------------------------------------------------------------
+   Iteration :5 (arr = -10)
+  
+ for (int i = 0; i < arr.length; i++) {
+        sum += arr[i];                                                 sum = 15
+        if (sum == k) {                                                sum == k , 15 == 15 ✔
+          maxLen = i + 1;
+         }
+        if (!map.containsKey(sum)) {                                   
+             map.put(sum, i);                                           
+        }
+        if (map.containsKey(sum - k)) {                                 
+             maxLen = Math.max(maxLen, i - map.get(sum - k));           maxLen =i+1 = 6
+          
+        }                                                               map = {10=0,15=1,17=2,24=3,25=4}
