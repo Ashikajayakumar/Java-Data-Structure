@@ -34,6 +34,46 @@ Output: false
     }
 }
 
-```
+```-------------------------------------------------------------------------------------------------------------------------------------------
+Formula used:
+                                  required=target−arr[i]
+Example
+arr = [2, 7, 11, 15]
+target = 9
+
+Initial state
+set = {}
+Iteration 1 (i = 0)  arr[i] = 2
+
+Required value
+res = 9 - 2 = 7
+
+Check set  set.contains(7) → false
+Add element to set :set = {2}
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Iteration 2 (i = 1) arr[i] = 7
+
+Required value
+res = 9 - 7 = 2
+
+Check set set.contains(2) → true
+
+Pair found: 2 + 7 = 9
+
+Program returns true
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Loop stops here.
+
+Table Representation
+i 	arr[i]	 res = target-arr[i]	 Set Before	      Found?	      Set After
+0	   2         	7	                   {}	              No           	{2}
+1	   7	        2	                   {2}	            Yes	Return true
+  
+Final Output
+true
+Time Complexity
+O(n)
+
+HashSet operations are O(1) on average.
 
 
