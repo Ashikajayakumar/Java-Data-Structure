@@ -17,8 +17,8 @@ Explanation: None of the pair makes a sum of 0
 Input: arr[] = [11], target = 11
 Output: false
 
-```
-  
+
+ ```java 
   class Solution {
     boolean twoSum(int arr[], int target) {
         // code here
