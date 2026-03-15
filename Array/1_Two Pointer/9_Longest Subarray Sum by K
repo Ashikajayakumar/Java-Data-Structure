@@ -14,7 +14,7 @@ The length of the longest subarray with a sum of 15 is 6.
 Input: arr[] = [-5, 8, -14, 2, 4, 12], k = -5
 Output: 5
 Explanation: Subarrays with sum = -5 are [-5] and [-5, 8, -14, 2, 4]. 
-The length of the longest subarray with a sum of -5 is 5.
+The length of the longest subarray with a sum of -5 is 5. 
 
 Input: arr[] = [10, -10, 20, 30], k = 5
 Output: 0
