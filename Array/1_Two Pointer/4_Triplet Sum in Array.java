@@ -4,7 +4,6 @@
 
 Given an array arr[] and an integer target, determine if there exists a triplet in the array whose 
 sum equals the given target.
-
 Return true if such a triplet exists, otherwise, return false.
 
 Examples: 
