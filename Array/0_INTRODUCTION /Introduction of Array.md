@@ -6,7 +6,6 @@
 * Used to store multiple values using a single variable.
 * Elements are accessed using <b>index</b>.
 * Array size is <b>fixed</b> once created.
-
 ---
 
 <h2 align="center"><b> 🔹 Key Features of Arrays </b></h2>
