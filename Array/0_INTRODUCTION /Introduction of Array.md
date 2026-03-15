@@ -152,5 +152,4 @@ void printArray(int[] arr) {
 }
 ```
 
----
 
