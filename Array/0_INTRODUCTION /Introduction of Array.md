@@ -1,5 +1,6 @@
 <h1 align="center"><b> ARRAYS IN JAVA  </b></h1>
 
+
 <h2 align="center"><b> What is an Array ? </b></h2>
 
 * An array in Java is a collection of <b>same type of elements</b> stored in <b>contiguous memory locations</b>.
