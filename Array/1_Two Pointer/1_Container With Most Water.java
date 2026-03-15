@@ -1,7 +1,6 @@
                                                 Container With Most Water
 
                                                                  
-
 Formula
 
 Area = width × height
