@@ -1,4 +1,7 @@
                                   Reverse a Stack
+
+
+                                    
 You are given a stack st[]. You have to reverse the stack.
 
 Examples:
