@@ -5,7 +5,7 @@
     int top;
     int size;
     int[] stack;
-
+ 
     Stack(int size) {
         this.size = size;
         stack = new int[size]; 
