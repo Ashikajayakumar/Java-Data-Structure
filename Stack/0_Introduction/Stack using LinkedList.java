@@ -11,7 +11,7 @@ class Stack{
         }
     }
     Node top;
-    boolean isEmpty(){
+    boolean isEmpty(){ 
         return top==null;
     }
     void push(int value){
