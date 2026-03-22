@@ -8,7 +8,7 @@
 
     Stack(int size) {
         this.size = size;
-        stack = new int[size];
+        stack = new int[size]; 
         top = -1;
     }
     boolean isFull() {
