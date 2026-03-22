@@ -1,7 +1,7 @@
                               Implementation of Stack using Array 
                                 
   
-  class Stack {
+  class Stack { 
     int top;
     int size;
     int[] stack;
