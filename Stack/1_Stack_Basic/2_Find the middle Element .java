@@ -1,6 +1,7 @@
                          Find the middle Element of A Stack
+                           
+                           
 🔹 Problem: Find the Middle Element of a Stack
-
 Given: A stack of integers
 Task: Find the middle element of the stack.
 
