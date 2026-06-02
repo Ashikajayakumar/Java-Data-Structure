@@ -2,7 +2,7 @@
 
 ## LeetCode Questions
 
-| No. | LC No. | Question Name                                                                                                     | Difficulty | LeetCode Link                                                                      |
+| No. | LC No. | Question Name                                                                                                     | Difficulty | LeetCode Link                                                                      | 
 | --- | ------ | ----------------------------------------------------------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------- |
 | 01  | 1920   | [Build Array from Permutation](./01.Build%20Array%20from%20Permutation.md)                                        | Easy       | https://leetcode.com/problems/build-array-from-permutation/                        |
 | 02  | 1929   | [Concatenation of Array](./02.Concatenation%20of%20Array.md)                                                      | Easy       | https://leetcode.com/problems/concatenation-of-array/                              |
