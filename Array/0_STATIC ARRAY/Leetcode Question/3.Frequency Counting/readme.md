@@ -5,7 +5,7 @@
 | 01 | 217 | [Contains Duplicate](./01.Conatins%20Duplicate.md) | Easy | https://leetcode.com/problems/contains-duplicate/ |   
 | 02 | 219 | [Contains Duplicate II](./02.Contains%20Duplicate%20II.md) | Easy | https://leetcode.com/problems/contains-duplicate-ii/ |    
 | 03 | 136 | [Single Number](./03.Single%20Number.md) | Easy | https://leetcode.com/problems/single-number/ |   
-| 04 | 169 | [Majority Element](./04.Majority%20Element.md) | Easy | https://leetcode.com/problems/majority-element/ |   
+| 04 | 169 | [Majority Element](./04.Majority%20Element.md) | Easy | https://leetcode.com/problems/majority-element/ |    
 | 05 | 1207 | [Unique Number of Occurrences](./05.Unique%20Number%20of%20Occurrences.md) | Easy | https://leetcode.com/problems/unique-number-of-occurrences/ | 
 | 06 | 645 | [Set Mismatch](./06.Set%20Mismatch.md) | Easy | https://leetcode.com/problems/set-mismatch/ |
 | 07 | 448 | [Find All Numbers Disappeared in an Array](./07.Find%20All%20Numbers%20Disappeared%20in%20an%20Array.md) | Easy | https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/ |
