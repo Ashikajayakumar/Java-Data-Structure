@@ -1,7 +1,7 @@
 # Searching
   
 ## LeetCode Questions  
-
+ 
 | No. | LC No. | Question Name                                                                                                          | Difficulty | LeetCode Link                                                                            |
 | --- | ------ | ---------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------------------- |
 | 01  | 704    | [Binary Search](./01.Binary%20Search.md)                                                                               | Easy       | https://leetcode.com/problems/binary-search/                                           |
