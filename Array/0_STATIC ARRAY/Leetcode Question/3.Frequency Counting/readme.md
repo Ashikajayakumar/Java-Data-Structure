@@ -1,7 +1,7 @@
 # Frequency Counting
 
 | No. | LC No. | Question Name | Difficulty | Link |
-|------|---------|---------------|------------|------|
+|------|---------|---------------|------------|------| 
 | 01 | 217 | [Contains Duplicate](./01.Conatins%20Duplicate.md) | Easy | https://leetcode.com/problems/contains-duplicate/ | 
 | 02 | 219 | [Contains Duplicate II](./02.Contains%20Duplicate%20II.md) | Easy | https://leetcode.com/problems/contains-duplicate-ii/ |
 | 03 | 136 | [Single Number](./03.Single%20Number.md) | Easy | https://leetcode.com/problems/single-number/ | 
