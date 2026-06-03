@@ -1,5 +1,5 @@
 # Array Fundamentals
-
+ 
 ## LeetCode Questions
  
 | No. | LC No. | Question Name                                                                                                     | Difficulty | LeetCode Link                                                                      | 
@@ -23,12 +23,3 @@
 
 ---
 
-## Progress
-
-* **Total Questions:** 16
-* **Category:** Array Fundamentals
-* **Difficulty Distribution:**
-
-  * Easy: 16
-  * Medium: 0
-  * Hard: 0
