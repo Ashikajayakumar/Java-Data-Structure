@@ -2,8 +2,6 @@
 
 ## LeetCode Questions
 
-This folder contains Binary Search related LeetCode problems with explanations and Java solutions.
-
 | No. | LC No. | Question Name                                                                                                          | Difficulty | LeetCode Link                                                                          |
 | --- | ------ | ---------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------------------- |
 | 01  | 704    | [Binary Search](./01.Binary%20Search.md)                                                                               | Easy       | https://leetcode.com/problems/binary-search/                                           |
