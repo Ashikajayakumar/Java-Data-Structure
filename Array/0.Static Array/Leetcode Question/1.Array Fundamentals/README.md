@@ -1,7 +1,7 @@
 # Array Fundamentals
 
 
----
+--- 
 
 ## 📚 LeetCode Questions
 
