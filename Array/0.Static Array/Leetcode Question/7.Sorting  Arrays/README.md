@@ -1,6 +1,5 @@
 # Sorting Arrays
 
-
 ---
 
 ## LeetCode Questions
