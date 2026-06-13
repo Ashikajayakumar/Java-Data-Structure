@@ -1,6 +1,5 @@
 # BFS Variations
 
-This section covers important Binary Tree BFS (Level Order Traversal) variations frequently asked in coding interviews.
 
 | No. | LC # | Problem | Difficulty | Link |
 |------|------|---------|------------|------|
