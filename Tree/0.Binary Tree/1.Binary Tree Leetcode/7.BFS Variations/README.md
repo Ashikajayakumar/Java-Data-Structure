@@ -1,4 +1,3 @@
-You can use the following README format for your **Binary Tree LeetCode Roadmap**.
 
 # Binary Tree LeetCode Roadmap
 
@@ -104,5 +103,3 @@ You can use the following README format for your **Binary Tree LeetCode Roadmap*
 | 05  | 1026 | Maximum Difference Between Node and Ancestor | Medium     | [https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/) |
 
 
-
-This set of **33 Binary Tree problems** covers nearly all major interview patterns: Traversal, BFS, DFS, Recursion, Path Problems, Tree Comparison, LCA, Serialization, and Advanced Tree DFS. For most company interviews, this is a strong Binary Tree preparation roadmap.
