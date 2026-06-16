@@ -1,7 +1,7 @@
 # Path Related
 
 ## LeetCode Questions
-
+ 
 | No. | LC No. | Question Name                                                                                                    | Difficulty | Link                                                                                       |
 | --- | ------ | ---------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------ |
 | 01  | 257    | [Binary Tree Paths](./01.Binary%20Tree%20Paths.md)                                                               | Easy       | [LeetCode](https://leetcode.com/problems/binary-tree-paths/)                               |
