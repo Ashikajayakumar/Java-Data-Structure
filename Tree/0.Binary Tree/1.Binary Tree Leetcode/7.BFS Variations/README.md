@@ -1,8 +1,5 @@
 # BFS Variations
 
-This section covers advanced applications of Breadth First Search (BFS) on Binary Trees. These problems extend the standard level-order traversal pattern by requiring level-wise processing, directional traversal, view generation, and aggregation of node values.
-
-
 
 
 ## Problems List
