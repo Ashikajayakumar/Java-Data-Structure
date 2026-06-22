@@ -8,7 +8,7 @@ Before starting these problems, make sure you are comfortable with:
 
 * BST Properties
 * Inorder, Preorder, and Postorder Traversals 
-* Recursive Tree Traversal 
+* Recursive Tree Traversal  
 * BST Search, Insert, and Delete Operations
 * Tree Construction Techniques
 * Divide and Conquer
