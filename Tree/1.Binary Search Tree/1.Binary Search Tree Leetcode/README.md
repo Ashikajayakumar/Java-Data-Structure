@@ -21,6 +21,8 @@ Master the fundamental BST operations and properties.
 ### Problems
 ## 1. Core
 
+## 1. Core
+
 | No. | LC No. | Question Name | Difficulty | Problem | Solution |
 |------|------|------|------|------|------|
 | 00 | 98 | Validate Binary Search Tree | Medium | [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/) | [Solution](./1.core/0.Validate%20BST.md) |
