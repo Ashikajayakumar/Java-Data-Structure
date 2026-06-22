@@ -16,11 +16,6 @@ This section provides a structured roadmap for mastering Binary Search Trees (BS
 
 ## 1. Core
 
-Master the fundamental BST operations and properties.
-
-### Problems
-## 1. Core
-
 | No. | LC No. | Question Name | Difficulty | Problem | Solution |
 |------|------|------|------|------|------|
 | 00 | 98 | Validate Binary Search Tree | Medium | [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/) | [Solution](./1.core/0.Validate%20BST.md) |
@@ -37,9 +32,6 @@ Master the fundamental BST operations and properties.
 
 ---
 
-## 2. Intermediate
-
-### Problems
 
 ## 2. Intermediate
 
@@ -59,9 +51,6 @@ Master the fundamental BST operations and properties.
 
 ---
 
-## 3. Advanced
-
-### Problems
 ## 3. Advanced
 
 | No. | LC No. | Question Name | Difficulty | Problem | Solution |
