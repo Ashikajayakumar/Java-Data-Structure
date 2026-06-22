@@ -21,8 +21,6 @@ Master the fundamental BST operations and properties.
 ### Problems
 ## 1. Core
 
-## 1. Core
-
 | No. | LC No. | Question Name | Difficulty | Problem | Solution |
 |------|------|------|------|------|------|
 | 00 | 98 | Validate Binary Search Tree | Medium | [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/) | [Solution](./1.core/0.Validate%20BST.md) |
@@ -43,19 +41,21 @@ Master the fundamental BST operations and properties.
 
 ### Problems
 
-| No. | LC No. | Question Name | Difficulty | Link |
-|------|------|------|------|------|
-| 01 | 99 | Recover BST | Medium | [Solution](./2.Intermediate/01.Recover%20BST.md) |
-| 02 | 538 / 1038 | Convert BST to Greater Tree | Medium | [Solution](./2.Intermediate/02.Convert%20BST%20to%20Greater%20Tree.md) |
-| 03 | 530 | Minimum Absolute Difference in BST | Easy | [Solution](./2.Intermediate/03.Minimum%20Absolute%20Difference%20in%20BST.md) |
-| 04 | 669 | Trim BST | Medium | [Solution](./2.Intermediate/04.Trim%20BST.md) |
-| 05 | 109 | Convert Sorted List to BST | Medium | [Solution](./2.Intermediate/05.Convert%20Sorted%20List%20to%20BST.md) |
-| 06 | 95 | Unique Binary Search Trees II | Medium | [Solution](./2.Intermediate/06.Unique%20Binary%20Search%20Trees%20II%20.md) |
-| 07 | 96 | Unique Binary Search Trees | Medium | [Solution](./2.Intermediate/07.Unique%20Binary%20Search%20Trees.md) |
-| 08 | 1305 | All Elements in Two Binary Search Trees | Medium | [Solution](./2.Intermediate/08.All%20Elements%20in%20Two%20Binary%20Search%20Trees.md) |
-| 09 | 1382 | Balance a Binary Search Tree | Medium | [Solution](./2.Intermediate/09.Balance%20a%20Binary%20Search%20Tree.md) |
-| 10 | 449 | Serialize and Deserialize BST | Medium | [Solution](./2.Intermediate/10.Serialize%20and%20Deserialize%20BST.md) |
-| 11 | 897 | Increasing Order Search Tree | Easy | [Solution](./2.Intermediate/11.Increasing%20Order%20Search%20Tree.md) |
+## 2. Intermediate
+
+| No. | LC No. | Question Name | Difficulty | Problem | Solution |
+|------|------|------|------|------|------|
+| 01 | 99 | Recover BST | Medium | [LeetCode](https://leetcode.com/problems/recover-binary-search-tree/) | [Solution](./2.Intermediate/01.Recover%20BST.md) |
+| 02 | 538/1038 | Convert BST to Greater Tree | Medium | [LeetCode](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [Solution](./2.Intermediate/02.Convert%20BST%20to%20Greater%20Tree.md) |
+| 03 | 530 | Minimum Absolute Difference in BST | Easy | [LeetCode](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | [Solution](./2.Intermediate/03.Minimum%20Absolute%20Difference%20in%20BST.md) |
+| 04 | 669 | Trim BST | Medium | [LeetCode](https://leetcode.com/problems/trim-a-binary-search-tree/) | [Solution](./2.Intermediate/04.Trim%20BST.md) |
+| 05 | 109 | Convert Sorted List to BST | Medium | [LeetCode](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | [Solution](./2.Intermediate/05.Convert%20Sorted%20List%20to%20BST.md) |
+| 06 | 95 | Unique Binary Search Trees II | Medium | [LeetCode](https://leetcode.com/problems/unique-binary-search-trees-ii/) | [Solution](./2.Intermediate/06.Unique%20Binary%20Search%20Trees%20II%20.md) |
+| 07 | 96 | Unique Binary Search Trees | Medium | [LeetCode](https://leetcode.com/problems/unique-binary-search-trees/) | [Solution](./2.Intermediate/07.Unique%20Binary%20Search%20Trees.md) |
+| 08 | 1305 | All Elements in Two Binary Search Trees | Medium | [LeetCode](https://leetcode.com/problems/all-elements-in-two-binary-search-trees/) | [Solution](./2.Intermediate/08.All%20Elements%20in%20Two%20Binary%20Search%20Trees.md) |
+| 09 | 1382 | Balance a Binary Search Tree | Medium | [LeetCode](https://leetcode.com/problems/balance-a-binary-search-tree/) | [Solution](./2.Intermediate/09.Balance%20a%20Binary%20Search%20Tree.md) |
+| 10 | 449 | Serialize and Deserialize BST | Medium | [LeetCode](https://leetcode.com/problems/serialize-and-deserialize-bst/) | [Solution](./2.Intermediate/10.Serialize%20and%20Deserialize%20BST.md) |
+| 11 | 897 | Increasing Order Search Tree | Easy | [LeetCode](https://leetcode.com/problems/increasing-order-search-tree/) | [Solution](./2.Intermediate/11.Increasing%20Order%20Search%20Tree.md) |
 
 ---
 
