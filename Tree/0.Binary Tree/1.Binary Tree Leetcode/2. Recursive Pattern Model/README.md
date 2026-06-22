@@ -1,6 +1,5 @@
 # Recursive Pattern Model
 
-
 ## LeetCode Questions
 
 | No. | LC No. | Question Name                                                                | Difficulty | Link                                                                    |
