@@ -1,7 +1,7 @@
 # Binary Search Tree - Intermediate
 
 This section covers intermediate-level Binary Search Tree (BST) problems that build upon BST traversal, insertion, deletion, searching, and validation concepts. These problems focus on tree transformations, balancing, serialization, dynamic programming on BSTs, and advanced BST properties commonly asked in coding interviews.
-
+ 
 ## Prerequisites
 
 Before starting these problems, make sure you are comfortable with:
