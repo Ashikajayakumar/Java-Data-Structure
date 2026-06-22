@@ -1,7 +1,5 @@
 # Traversal Model 
 
----
-
 ## 1. DFS Traversal 
  
 | No. | LC No. | Question Name                                                                                       | Difficulty | Link                                                                       |
