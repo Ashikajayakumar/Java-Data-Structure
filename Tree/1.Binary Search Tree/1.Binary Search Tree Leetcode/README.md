@@ -1,6 +1,5 @@
 # Binary Search Tree Leetcode
 
-This section provides a structured roadmap for mastering Binary Search Trees (BSTs) through carefully selected LeetCode problems.
 
 ---
 
