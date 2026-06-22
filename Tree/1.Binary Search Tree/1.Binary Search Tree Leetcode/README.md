@@ -19,19 +19,21 @@ This section provides a structured roadmap for mastering Binary Search Trees (BS
 Master the fundamental BST operations and properties.
 
 ### Problems
+## 1. Core
 
-| No. | LC No. | Question Name | Difficulty | Link |
-|------|------|------|------|------|
-| 00 | 98 | Validate Binary Search Tree | Medium | [Solution](./1.core/0.Validate%20BST.md) |
-| 01 | 700 | Search in BST | Easy | [Solution](./1.core/1.Search%20in%20BST.md) |
-| 02 | 701 | Insert into BST | Medium | [Solution](./1.core/2.Insert%20into%20BST.md) |
-| 03 | 450 | Delete Node in BST | Medium | [Solution](./1.core/3.Delete%20Node%20in%20BST.md) |
-| 04 | 230 | Kth Smallest Element in BST | Medium | [Solution](./1.core/4.Kth%20Smallest%20Element%20in%20BST.md) |
-| 05 | 235 | Lowest Common Ancestor of BST | Medium | [Solution](./1.core/5.Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree.md) |
-| 06 | 108 | Convert Sorted Array to BST | Easy | [Solution](./1.core/6.Convert%20Sorted%20Array%20to%20BST.md) |
-| 07 | 173 | Binary Search Tree Iterator | Medium | [Solution](./1.core/7.Binary%20Search%20Tree%20Iterator.md) |
-| 08 | 653 | Two Sum IV | Easy | [Solution](./1.core/8.Two%20Sum%20IV.md) |
-| 09 | 1008 | Construct BST from Preorder Traversal | Medium | [Solution](./1.core/9.Construct%20BST%20from%20Preorder.md) |
+| No. | LC No. | Question Name | Difficulty | Problem | Solution |
+|------|------|------|------|------|------|
+| 00 | 98 | Validate Binary Search Tree | Medium | [LeetCode](https://leetcode.com/problems/validate-binary-search-tree/) | [Solution](./1.core/0.Validate%20BST.md) |
+| 01 | 700 | Search in BST | Easy | [LeetCode](https://leetcode.com/problems/search-in-a-binary-search-tree/) | [Solution](./1.core/1.Search%20in%20BST.md) |
+| 02 | 701 | Insert into BST | Medium | [LeetCode](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | [Solution](./1.core/2.Insert%20into%20BST.md) |
+| 03 | 450 | Delete Node in BST | Medium | [LeetCode](https://leetcode.com/problems/delete-node-in-a-bst/) | [Solution](./1.core/3.Delete%20Node%20in%20BST.md) |
+| 04 | 230 | Kth Smallest Element in BST | Medium | [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Solution](./1.core/4.Kth%20Smallest%20Element%20in%20BST.md) |
+| 05 | 235 | Lowest Common Ancestor of BST | Medium | [LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Solution](./1.core/5.Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree.md) |
+| 06 | 108 | Convert Sorted Array to BST | Easy | [LeetCode](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Solution](./1.core/6.Convert%20Sorted%20Array%20to%20BST.md) |
+| 07 | 173 | Binary Search Tree Iterator | Medium | [LeetCode](https://leetcode.com/problems/binary-search-tree-iterator/) | [Solution](./1.core/7.Binary%20Search%20Tree%20Iterator.md) |
+| 08 | 653 | Two Sum IV - Input is a BST | Easy | [LeetCode](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | [Solution](./1.core/8.Two%20Sum%20IV.md) |
+| 09 | 1008 | Construct BST from Preorder Traversal | Medium | [LeetCode](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | [Solution](./1.core/9.Construct%20BST%20from%20Preorder.md) |
+
 
 ---
 
