@@ -7,7 +7,7 @@ This section covers intermediate-level Binary Search Tree (BST) problems that bu
 Before starting these problems, make sure you are comfortable with:
 
 * BST Properties
-* Inorder, Preorder, and Postorder Traversals
+* Inorder, Preorder, and Postorder Traversals 
 * Recursive Tree Traversal
 * BST Search, Insert, and Delete Operations
 * Tree Construction Techniques
