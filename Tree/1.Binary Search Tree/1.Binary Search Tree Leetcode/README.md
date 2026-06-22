@@ -62,12 +62,13 @@ Master the fundamental BST operations and properties.
 ## 3. Advanced
 
 ### Problems
+## 3. Advanced
 
-| No. | LC No. | Question Name | Difficulty | Link |
-|------|------|------|------|------|
-| 01 | 1373 | Maximum Sum BST in Binary Tree | Hard | [Solution](./3.Advanced/01.Maximum%20Sum%20BST%20in%20Binary%20Tree.md) |
-| 02 | 1932 | Merge BSTs to Create Single BST | Hard | [Solution](./3.Advanced/02.Merge%20BSTs%20to%20Create%20Single%20BST.md) |
-| 03 | 1569 | Number of Ways to Reorder Array to Get Same BST | Hard | [Solution](./3.Advanced/03.Number%20of%20Ways%20to%20Reorder%20Array%20to%20Get%20Same%20BST.md) |
+| No. | LC No. | Question Name | Difficulty | Problem | Solution |
+|------|------|------|------|------|------|
+| 01 | 1373 | Maximum Sum BST in Binary Tree | Hard | [LeetCode](https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/) | [Solution](./3.Advanced/01.Maximum%20Sum%20BST%20in%20Binary%20Tree.md) |
+| 02 | 1932 | Merge BSTs to Create Single BST | Hard | [LeetCode](https://leetcode.com/problems/merge-bsts-to-create-single-bst/) | [Solution](./3.Advanced/02.Merge%20BSTs%20to%20Create%20Single%20BST.md) |
+| 03 | 1569 | Number of Ways to Reorder Array to Get Same BST | Hard | [LeetCode](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/) | [Solution](./3.Advanced/03.Number%20of%20Ways%20to%20Reorder%20Array%20to%20Get%20Same%20BST.md) |
 
 ---
 
