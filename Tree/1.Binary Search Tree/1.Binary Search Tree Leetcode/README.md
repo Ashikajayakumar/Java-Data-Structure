@@ -1,7 +1,7 @@
 # Binary Search Tree Leetcode  
    
 ## Learning Roadmap                
-    
+     
 | Level | Topics | Link |        
 |--------|---------|---------|    
 | 1 | Core BST Operations | [Core](./1.core/README.md) |  
