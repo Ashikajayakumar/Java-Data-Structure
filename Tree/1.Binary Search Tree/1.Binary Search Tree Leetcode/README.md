@@ -8,7 +8,6 @@
 | 2 | Intermediate BST Patterns | [Intermediate](./2.Intermediate/README.md) | 
 | 3 | Advanced BST Problems | [Advanced](./3.Advanced/README.md) |  
 
----
 
 ## 1. Core
 
