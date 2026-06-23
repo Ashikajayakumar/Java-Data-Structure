@@ -2,7 +2,7 @@
  
 ## Learning Roadmap       
   
-| Level | Topics | Link |     
+| Level | Topics | Link |      
 |--------|---------|---------|    
 | 1 | Core BST Operations | [Core](./1.core/README.md) |  
 | 2 | Intermediate BST Patterns | [Intermediate](./2.Intermediate/README.md) |
