@@ -1,7 +1,7 @@
 # Binary Search Tree Leetcode 
   
 
-## Learning Roadmap    
+## Learning Roadmap     
   
 | Level | Topics | Link |   
 |--------|---------|---------|   
