@@ -6,7 +6,7 @@
 |--------|---------|---------|   
 | 1 | Core BST Operations | [Core](./1.core/README.md) |  
 | 2 | Intermediate BST Patterns | [Intermediate](./2.Intermediate/README.md) |
-| 3 | Advanced BST Problems | [Advanced](./3.Advanced/README.md) | 
+| 3 | Advanced BST Problems | [Advanced](./3.Advanced/README.md) |  
 
 ---
 
