@@ -1,5 +1,4 @@
 # Graph in DSA (Java) 
----
 
 # 1. What is a Graph?
 
