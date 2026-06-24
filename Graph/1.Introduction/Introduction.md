@@ -223,12 +223,10 @@ graph.get(3).add(2);
 
 # 5. Graph Traversal
 
----
 
 ## BFS (Breadth First Search)
 
 Uses Queue.
----
 
 ## DFS (Depth First Search)
 
@@ -237,14 +235,10 @@ Uses Recursion / Stack.
 
 # 6. Cycle Detection
 
----
 
 ## Undirected Graph
 
 Using DFS + Parent
-
-
----
 
 ## Directed Graph
 
