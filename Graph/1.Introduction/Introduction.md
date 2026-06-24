@@ -1,7 +1,4 @@
-# Graph in DSA (Java) – Complete Interview Roadmap
-
-Graphs are one of the most important topics in Data Structures and Algorithms. Companies like Amazon, Microsoft, Google, Adobe, Atlassian, Walmart, Goldman Sachs, and many product-based companies frequently ask graph problems.
-
+# Graph in DSA (Java) 
 ---
 
 # 1. What is a Graph?
