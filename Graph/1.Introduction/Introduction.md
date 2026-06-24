@@ -228,70 +228,11 @@ graph.get(3).add(2);
 ## BFS (Breadth First Search)
 
 Uses Queue.
-
-```java
-public void bfs(int start, List<List<Integer>> graph) {
-
-    boolean[] visited = new boolean[graph.size()];
-
-    Queue<Integer> q = new LinkedList<>();
-
-    q.offer(start);
-    visited[start] = true;
-
-    while(!q.isEmpty()) {
-
-        int node = q.poll();
-
-        System.out.print(node + " ");
-
-        for(int nbr : graph.get(node)) {
-
-            if(!visited[nbr]) {
-                visited[nbr] = true;
-                q.offer(nbr);
-            }
-        }
-    }
-}
-```
-
-### Complexity
-
-```text
-O(V + E)
-```
-
 ---
 
 ## DFS (Depth First Search)
 
 Uses Recursion / Stack.
-
-```java
-public void dfs(int node,
-                List<List<Integer>> graph,
-                boolean[] visited) {
-
-    visited[node] = true;
-
-    System.out.print(node + " ");
-
-    for(int nbr : graph.get(node)) {
-
-        if(!visited[nbr]) {
-            dfs(nbr, graph, visited);
-        }
-    }
-}
-```
-
-### Complexity
-
-```text
-O(V + E)
-```
-
 ---
 
 # 6. Cycle Detection
@@ -302,58 +243,12 @@ O(V + E)
 
 Using DFS + Parent
 
-```java
-boolean dfs(int node,
-            int parent,
-            boolean[] visited,
-            List<List<Integer>> graph){
-
-    visited[node] = true;
-
-    for(int nbr : graph.get(node)){
-
-        if(!visited[nbr]){
-
-            if(dfs(nbr,node,visited,graph))
-                return true;
-
-        }else if(nbr != parent){
-            return true;
-        }
-    }
-
-    return false;
-}
-```
 
 ---
 
 ## Directed Graph
 
 Using Recursion Stack
-
-```java
-boolean dfs(int node){
-
-    visited[node] = true;
-    pathVisited[node] = true;
-
-    for(int nbr : graph.get(node)){
-
-        if(!visited[nbr]){
-            if(dfs(nbr))
-                return true;
-        }
-        else if(pathVisited[nbr]){
-            return true;
-        }
-    }
-
-    pathVisited[node] = false;
-
-    return false;
-}
-```
 
 ---
 
