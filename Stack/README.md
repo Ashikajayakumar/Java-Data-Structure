@@ -7,7 +7,7 @@ and Math.
 
 
 ## 🔹 0. Introduction
-- [Introduction to Stack](0_Introduction/Introduction%20to%20Stack.md)
+- [Introduction to Stack](0_Introduction/Introduction%20to%20Stack.md) 
 - [Stack using Array](0_Introduction/Stack%20using%20Array.java)
 - [Stack using LinkedList](0_Introduction/Stack%20using%20LinkedList.java)
 
