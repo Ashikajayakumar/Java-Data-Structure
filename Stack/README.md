@@ -2,7 +2,7 @@
  
 This folder contains **Stack theory, implementations, and interview problems**
 organized from **basic to advanced**, including combinations with Arrays, Strings, 
-and Math.   
+and Math.    
      
  
 ## 🔹 0. Introduction 
