@@ -1,5 +1,5 @@
 # 📚 Stack – Algorithms & Interview Problems (Java)
-
+ 
 This folder contains **Stack theory, implementations, and interview problems**
 organized from **basic to advanced**, including combinations with Arrays, Strings,
 and Math.
