@@ -1,4 +1,4 @@
-Backtracking is one of the most important algorithms in DSA. Before solving problems like **N-Queens, Sudoku Solver, Rat in a Maze, Combination Sum, Permutations, Word Search**, you should understand **why backtracking exists**.
+
 <img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/89b7a14d-bac5-40a2-ba59-eff3dc8125f2" />
 
 ---
