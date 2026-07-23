@@ -1,0 +1,586 @@
+# 🔷 Valid Parentheses (LeetCode 20)
+
+## 📌 Problem Statement
+
+Given a string `s` containing only the characters:
+
+```
+'(' , ')' , '{' , '}' , '[' , ']'
+```
+
+Determine whether the input string is **valid**.
+
+A string is valid if:
+
+- Every opening bracket has a corresponding closing bracket.
+- The brackets are closed in the correct order.
+- Every closing bracket matches the correct type of opening bracket.
+
+---
+
+# 🧩 Examples
+
+### Example 1
+
+**Input**
+
+```
+s = "()"
+```
+
+**Output**
+
+```
+true
+```
+
+---
+
+### Example 2
+
+**Input**
+
+```
+s = "()[]{}"
+```
+
+**Output**
+
+```
+true
+```
+
+---
+
+### Example 3
+
+**Input**
+
+```
+s = "(]"
+```
+
+**Output**
+
+```
+false
+```
+
+---
+
+### Example 4
+
+**Input**
+
+```
+s = "([])"
+```
+
+**Output**
+
+```
+true
+```
+
+---
+
+### Example 5
+
+**Input**
+
+```
+s = "([)]"
+```
+
+**Output**
+
+```
+false
+```
+
+---
+
+# 📋 Constraints
+
+```
+1 <= s.length <= 10^4
+
+s consists only of:
+
+() [] {}
+```
+
+---
+
+# 💡 Approach
+
+We use a **Stack** because brackets follow the **Last In First Out (LIFO)** principle.
+
+### Idea
+
+- When an opening bracket is found, push its expected closing bracket onto the stack.
+- When a closing bracket is found:
+  - If the stack is empty → Invalid.
+  - Otherwise, pop the top element and compare.
+- If they do not match → Invalid.
+- At the end, the stack must be empty.
+
+---
+
+# 🔄 Algorithm
+
+### Step 1
+
+Create an empty stack.
+
+```java
+Stack<Character> st = new Stack<>();
+```
+
+---
+
+### Step 2
+
+Traverse every character in the string.
+
+```java
+for(int i = 0; i < s.length(); i++)
+```
+
+---
+
+### Step 3
+
+If an opening bracket is found:
+
+Push its matching closing bracket.
+
+```
+(  →  )
+
+{  →  }
+
+[  →  ]
+```
+
+Example:
+
+```
+Input:
+
+(
+
+Stack:
+
+)
+```
+
+---
+
+### Step 4
+
+If a closing bracket is found:
+
+Check:
+
+```
+Stack Empty?
+
+YES → Invalid
+```
+
+Otherwise:
+
+Pop the top element.
+
+If:
+
+```
+pop != current character
+```
+
+Return:
+
+```
+false
+```
+
+---
+
+### Step 5
+
+After traversing the string,
+
+If stack is empty:
+
+```
+true
+```
+
+Otherwise:
+
+```
+false
+```
+
+---
+
+# 🔍 Dry Run 1
+
+## Input
+
+```
+()
+```
+
+Initial:
+
+```
+Stack
+
+EMPTY
+```
+
+---
+
+### Iteration 1
+
+Character:
+
+```
+(
+```
+
+Push expected closing bracket.
+
+Stack:
+
+```
+)
+```
+
+---
+
+### Iteration 2
+
+Character:
+
+```
+)
+```
+
+Pop:
+
+```
+)
+```
+
+Matches.
+
+Stack:
+
+```
+EMPTY
+```
+
+End of string.
+
+Stack is empty.
+
+Result:
+
+```
+true
+```
+
+---
+
+# 🔍 Dry Run 2
+
+## Input
+
+```
+([])
+```
+
+Initial
+
+```
+EMPTY
+```
+
+---
+
+### Iteration 1
+
+Character:
+
+```
+(
+```
+
+Push:
+
+```
+)
+```
+
+Stack:
+
+```
+)
+```
+
+---
+
+### Iteration 2
+
+Character:
+
+```
+[
+```
+
+Push:
+
+```
+]
+```
+
+Stack:
+
+```
+]
+)
+```
+
+Top is:
+
+```
+]
+```
+
+---
+
+### Iteration 3
+
+Character:
+
+```
+]
+```
+
+Pop:
+
+```
+]
+```
+
+Matches.
+
+Stack:
+
+```
+)
+```
+
+---
+
+### Iteration 4
+
+Character:
+
+```
+)
+```
+
+Pop:
+
+```
+)
+```
+
+Matches.
+
+Stack:
+
+```
+EMPTY
+```
+
+Result:
+
+```
+true
+```
+
+---
+
+# 🔍 Dry Run 3
+
+## Input
+
+```
+([)]
+```
+
+Initial:
+
+```
+EMPTY
+```
+
+---
+
+### Iteration 1
+
+Character:
+
+```
+(
+```
+
+Push:
+
+```
+)
+```
+
+Stack:
+
+```
+)
+```
+
+---
+
+### Iteration 2
+
+Character:
+
+```
+[
+```
+
+Push:
+
+```
+]
+```
+
+Stack:
+
+```
+]
+)
+```
+
+---
+
+### Iteration 3
+
+Character:
+
+```
+)
+```
+
+Pop:
+
+```
+]
+```
+
+Compare:
+
+```
+] != )
+```
+
+Mismatch.
+
+Return:
+
+```
+false
+```
+
+---
+
+# ✅ Java Implementation
+
+```java
+import java.util.Scanner;
+import java.util.Stack;
+
+public class ValidParentheses {
+
+    public static boolean isValid(String s) {
+
+        Stack<Character> st = new Stack<>();
+
+
+        for(int i = 0; i < s.length(); i++) {
+
+            char c = s.charAt(i);
+
+
+            if(c == '(') {
+
+                st.push(')');
+
+            }
+
+            else if(c == '{') {
+
+                st.push('}');
+
+            }
+
+            else if(c == '[') {
+
+                st.push(']');
+
+            }
+
+            else if(st.isEmpty() || st.pop() != c) {
+
+                return false;
+
+            }
+
+        }
+
+
+        return st.isEmpty();
+
+    }
+
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a string with parentheses:");
+
+        String input = sc.nextLine();
+
+
+        if(isValid(input)) {
+
+            System.out.println("The parentheses are valid.");
+
+        }
+
+        else {
+
+            System.out.println("The parentheses are NOT valid.");
+
+        }
+
+        sc.close();
+
+    }
+}
+```
+
