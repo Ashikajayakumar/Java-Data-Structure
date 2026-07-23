@@ -110,22 +110,6 @@ s consists only of:
 () [] {}
 ```
 
----
-
-# 💡 Approach
-
-We use a **Stack** because brackets follow the **Last In First Out (LIFO)** principle.
-
-### Idea
-
-- When an opening bracket is found, push its expected closing bracket onto the stack.
-- When a closing bracket is found:
-  - If the stack is empty → Invalid.
-  - Otherwise, pop the top element and compare.
-- If they do not match → Invalid.
-- At the end, the stack must be empty.
-
----
 
 # 🔄 Algorithm
 
