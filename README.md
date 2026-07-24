@@ -1,3 +1,17 @@
+# 🚀 Java Data Structure & Algorithms
+
+> A complete **Java DSA Interview Preparation Repository** covering fundamentals, problem-solving patterns, advanced algorithms, and company-wise coding questions.
+
+![Java](https://img.shields.io/badge/Language-Java-orange?style=for-the-badge)
+![DSA](https://img.shields.io/badge/Topic-Data%20Structures%20%26%20Algorithms-blue?style=for-the-badge)
+![LeetCode](https://img.shields.io/badge/Practice-LeetCode-green?style=for-the-badge)
+![Interview](https://img.shields.io/badge/Interview-Preparation-red?style=for-the-badge)
+
+---
+
+# 📚 Repository Structure
+
+```
 Java-Data-Structure
 │
 ├── 00. Java Basics
@@ -15,13 +29,13 @@ Java-Data-Structure
 │      └── Binary Search
 │
 ├── 06. Sorting
-│      ├── Bubble
-│      ├── Selection
-│      ├── Insertion
-│      ├── Merge
-│      ├── Quick
-│      ├── Heap
-│      └── Counting/Radix
+│      ├── Bubble Sort
+│      ├── Selection Sort
+│      ├── Insertion Sort
+│      ├── Merge Sort
+│      ├── Quick Sort
+│      ├── Heap Sort
+│      └── Counting / Radix Sort
 │
 ├── 07. Hashing
 │
@@ -49,27 +63,29 @@ Java-Data-Structure
 │
 ├── 19. Trees
 │      ├── Binary Tree
-│      ├── BST
-│      ├── AVL (Optional)
+│      ├── Binary Search Tree (BST)
+│      └── AVL Tree (Optional)
 │
 ├── 20. Trie
 │
 ├── 21. Graph
-│      ├── BFS
-│      ├── DFS
+│      ├── Breadth First Search (BFS)
+│      ├── Depth First Search (DFS)
 │      ├── Topological Sort
-│      ├── Shortest Path
-│      ├── MST
-│      ├── Union Find (DSU)
+│      ├── Shortest Path Algorithms
+│      ├── Minimum Spanning Tree (MST)
+│      └── Disjoint Set Union (Union Find)
 │
 ├── 22. Dynamic Programming
 │
 ├── 23. Segment Tree
 │
-├── 24. Fenwick Tree (BIT)
+├── 24. Fenwick Tree (Binary Indexed Tree)
 │
 ├── 25. Advanced Algorithms
 │
 ├── 26. Interview Patterns
 │
 └── 27. Company-wise Questions
+```
+
