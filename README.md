@@ -6,7 +6,7 @@
 
 ---  
       
-# 📚 Repository Structure    v 
+# 📚 Repository Structure    
     
 ```     
 Java-Data-Structure     
