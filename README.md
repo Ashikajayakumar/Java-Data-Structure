@@ -9,7 +9,7 @@
 # 📚 Repository Structure      
       
 ```         
-Java-Data-Structure     
+Java-Data-Structure      
 │ 
 ├── 00. Java Basics
 │
