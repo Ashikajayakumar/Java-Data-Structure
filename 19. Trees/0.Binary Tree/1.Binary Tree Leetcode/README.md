@@ -24,12 +24,12 @@ Master the fundamental ways to traverse a tree.
 
 ### DFS Traversal
 
-| No. | LC No. | Question Name                         | Difficulty | Link                                                                                                                       |
-| --- | ------ | -------------------------------       | ---------- | -------------------------------------------------------------------------------------------------------------------------- |
-| 01  | 94     | Binary Tree Inorder Traversal         | Easy       | [Binary Tree Inorder Traversal](./1.%20Traversal%20Model/1.DFS%20Traversal/01.%20BinaryTree%20Inorder%20Traversal.md)      |
-| 02  | 144    | Binary Tree Preorder Traversal        | Easy       | [Binary Tree Preorder Traversal](./1.%20Traversal%20Model/1.DFS%20Traversal/02.Binary%20Tree%20Preorder%20Traversal%20.md) |
-| 03  | 145    | Binary Tree Postorder Traversal       | Easy       | [Binary Tree Postorder Traversal](./1.%20Traversal%20Model/1.DFS%20Traversal/03.Binary%20Tree%20Postorder%20Traversal.md)  |
-| 04  | 107    | Binary Tree Level order Traversal II  | Easy       | https://github.com/Ashikajayakumar/Java-Data-Structure/blob/main/19.%20Trees/0.Binary%20Tree/1.Binary%20Tree%20Leetcode/1.%20Traversal%20Model/2.BFS%20Traversal/04.Binary%20Tree%20Level%20Order%20Traversal%20II.md                         |
+| No. | LC No. | Question Name                      | Difficulty | Link                                                                                                                       |
+| --- | ------ | -------------------------------    | ---------- | -------------------------------------------------------------------------------------------------------------------------- |
+| 01  | 94     | Binary Tree Inorder Traversal      | Easy       | [Binary Tree Inorder Traversal](./1.%20Traversal%20Model/1.DFS%20Traversal/01.%20BinaryTree%20Inorder%20Traversal.md)      |
+| 02  | 144    | Binary Tree Preorder Traversal     | Easy       | [Binary Tree Preorder Traversal](./1.%20Traversal%20Model/1.DFS%20Traversal/02.Binary%20Tree%20Preorder%20Traversal%20.md) |
+| 03  | 145    | Binary Tree Postorder Traversal    | Easy       | [Binary Tree Postorder Traversal](./1.%20Traversal%20Model/1.DFS%20Traversal/03.Binary%20Tree%20Postorder%20Traversal.md)  |
+| 04  | 107    | Binary Tree Level order Traversal II | Easy       | https://github.com/Ashikajayakumar/Java-Data-Structure/blob/main/19.%20Trees/0.Binary%20Tree/1.Binary%20Tree%20Leetcode/1.%20Traversal%20Model/2.BFS%20Traversal/04.Binary%20Tree%20Level%20Order%20Traversal%20II.md                         |
 
 ### BFS Traversal
 
