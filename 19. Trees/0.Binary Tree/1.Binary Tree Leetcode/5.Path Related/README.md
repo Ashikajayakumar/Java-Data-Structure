@@ -10,6 +10,7 @@
 | 04 | 129 | [Sum Root to Leaf Numbers](./04.Sum%20Root%20to%20Leaf%20Numbers.md) | Medium | [LeetCode](https://leetcode.com/problems/sum-root-to-leaf-numbers/) |
 | 05 | 124 | [Binary Tree Maximum Path Sum](./05.Binary%20Tree%20Maximum%20Path%20Sum.md) | Hard | [LeetCode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) |
 | 06 | 1448 | [Count Good Nodes in Binary Tree](./06.Count%20Good%20Nodes.md) | Medium | [LeetCode](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) |
+| 07 | 968 | [Binary Tree Cameras](./07.Binary%20Tree%20Cameras.md) | Hard | [LeetCode](https://leetcode.com/problems/binary-tree-cameras/) |
 
 ---
 
