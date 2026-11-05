@@ -2,8 +2,6 @@
 
 Bit Manipulation is a technique used to solve problems by directly working with the binary representation (0s and 1s) of numbers.
 
-For Infosys Specialist Programmer (SP) and Digital Specialist Engineer (DSE) preparation, learn these concepts in order:
-
 1. Binary number basics
 2. Bitwise operators
 3. Shift operators
