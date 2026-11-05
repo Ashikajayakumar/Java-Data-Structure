@@ -153,7 +153,7 @@ Output: `7`
 
 Java:
 
-```
+``` 
 System.out.println(5 | 3);
 ```
 
