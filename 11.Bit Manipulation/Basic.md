@@ -1,4 +1,5 @@
 # Bit Manipulation in Java – Complete Basics
+<img width="1312" height="1199" alt="image" src="https://github.com/user-attachments/assets/5bb22e18-f24c-467f-aba7-3053842e463f" />
 
 Bit Manipulation is a technique used to solve problems by directly working with the binary representation (0s and 1s) of numbers.
 
