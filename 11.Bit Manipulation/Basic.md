@@ -28,7 +28,7 @@ Example: Decimal number `13`
 
 Therefore:
 
-\\[ 13 = 8+4+0+1 \\]
+``[ 13 = 8+4+0+1 ]``
 
 Binary representation:
 
