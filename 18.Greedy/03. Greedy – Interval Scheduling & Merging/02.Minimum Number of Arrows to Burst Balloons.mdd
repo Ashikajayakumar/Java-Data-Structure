@@ -1,0 +1,609 @@
+# LeetCode 452 – Minimum Number of Arrows to Burst Balloons
+
+Greedy Algorithm | Sorting | Interval Scheduling | Medium
+
+Important Greedy Pattern
+
+This problem is closely related to LeetCode 435 – Non-overlapping Intervals. Both use sorting and greedy interval selection, but the goal and overlap handling are slightly different.
+
+## 1. Problem Statement
+
+You are given a 2D integer array `points`, where:
+
+```
+points[i] = [xStart, xEnd]
+```
+
+Each pair represents a horizontal balloon:
+
+- `xStart` = starting coordinate of the balloon.
+- `xEnd` = ending coordinate of the balloon.
+
+You can shoot an arrow vertically at any x-coordinate.
+
+An arrow bursts every balloon whose horizontal range includes that coordinate.
+
+Your task is to return the minimum number of arrows required to burst all balloons.
+
+Important: A balloon bursts when the arrow coordinate is between its start and end, including both boundaries.
+
+## 2. Example
+
+Example 1
+
+```
+Input:
+points = [[10,16], [2,8], [1,6], [7,12]]
+
+Output:
+2
+```
+
+Explanation:
+
+We have four balloons:
+
+Balloon ranges
+
+Arrow at x = 6 bursts balloons [2,8] and [1,6]. Arrow at x = 10 bursts [10,16] and [7,12].
+
+We can shoot:
+
+- Arrow 1 at coordinate `6` → bursts `[2,8]` and `[1,6]`.
+- Arrow 2 at coordinate `10` → bursts `[10,16]` and `[7,12]`.
+
+Therefore:
+
+```
+Output = 2
+```
+
+Example 2
+
+```
+Input:
+points = [[1,2], [3,4], [5,6], [7,8]]
+
+Output:
+4
+```
+
+No balloons overlap, so we need four arrows.
+
+Example 3
+
+```
+Input:
+points = [[1,2], [2,3], [3,4], [4,5]]
+
+Output:
+2
+```
+
+An arrow at `2` bursts the first two balloons. An arrow at `4` bursts the last two balloons.
+
+## 3. Important Points
+
+1. Each balloon is represented by a start and end coordinate.
+2. One arrow can burst multiple balloons if their ranges overlap.
+3. We need to minimize the number of arrows.
+4. An arrow can burst a balloon at either endpoint.
+5. Therefore, touching boundaries count as overlap.
+
+Key observation:
+
+If several balloons overlap, we can burst all of them with one arrow by shooting at a coordinate inside their common intersection.
+
+## 4. Main Concept – Greedy Algorithm
+
+The greedy strategy is:
+
+Sort balloons by their ending coordinate and shoot an arrow at the end of the first balloon.
+
+Why choose the ending coordinate?
+
+Because shooting at the earliest ending point gives us the best chance of bursting the maximum number of upcoming balloons.
+
+Consider:
+
+```
+Balloon A = [1,6]
+Balloon B = [2,8]
+Balloon C = [3,7]
+```
+
+Their common intersection is:
+
+```
+[3,6]
+```
+
+We can shoot one arrow at coordinate `6` and burst all three balloons.
+
+Visualize the common intersection
+
+1 arrow bursts 3 balloons
+
+## 5. Main Logic – Step by Step
+
+We need three things:
+
+- Sort the balloons by ending coordinate.
+- Track where we shoot the previous arrow.
+- Count how many arrows we shoot.
+
+### Step 1: Sort by ending coordinate
+
+```
+Arrays.sort(points, (a, b) ->
+    Integer.compare(a[1], b[1]));
+```
+
+Here:
+
+```
+points[i][0] = Start coordinate
+points[i][1] = End coordinate
+```
+
+We sort by `points[i][1]` in ascending order.
+
+### Step 2: Initialize variables
+
+```
+int arrows = 1;
+int arrowPos = points[0][1];
+```
+
+- `arrows` counts the number of arrows.
+- `arrowPos` stores the coordinate where we shoot the current arrow.
+
+Why initialize `arrowPos` with the first balloon's end?
+
+Because we want to shoot at the earliest possible ending coordinate to burst as many overlapping balloons as possible.
+
+### Step 3: Traverse the remaining balloons
+
+```
+for (int i = 1; i < points.length; i++)
+```
+
+We start at index 1 because we already shoot one arrow for the first balloon.
+
+### Step 4: Check whether the current balloon needs a new arrow
+
+```
+if (points[i][0] > arrowPos)
+```
+
+Here:
+
+```
+points[i][0] = Current balloon start
+arrowPos     = Previous arrow coordinate
+```
+
+If the current balloon starts after the previous arrow coordinate, the previous arrow cannot burst it.
+
+Therefore, shoot a new arrow:
+
+```
+arrows++;
+arrowPos = points[i][1];
+```
+
+### Step 5: Otherwise, use the existing arrow
+
+If:
+
+```
+points[i][0] <= arrowPos
+```
+
+The current balloon includes the previous arrow coordinate.
+
+So the existing arrow bursts it. No new arrow is needed.
+
+### Step 6: Return the answer
+
+```
+return arrows;
+```
+
+## 6. Java Solution
+
+Greedy – Recommended Solution
+
+```
+import java.util.Arrays;
+
+class Solution {
+    public int findMinArrowShots(int[][] points) {
+
+        // Sort balloons by ending coordinate
+        Arrays.sort(points, (a, b) ->
+            Integer.compare(a[1], b[1]));
+
+        // Shoot the first arrow at the first balloon's end
+        int arrows = 1;
+        int arrowPos = points[0][1];
+
+        // Check remaining balloons
+        for (int i = 1; i < points.length; i++) {
+
+            // If current balloon starts after the arrow position
+            if (points[i][0] > arrowPos) {
+
+                // Need a new arrow
+                arrows++;
+
+                // Shoot at the current balloon's end
+                arrowPos = points[i][1];
+            }
+        }
+
+        return arrows;
+    }
+}
+```
+
+## 7. Understand the Code – Line by Line
+
+Part A – Sorting
+
+```
+Arrays.sort(points, (a, b) ->
+    Integer.compare(a[1], b[1]));
+```
+
+Each balloon has two coordinates:
+
+```
+a[0] = Start
+a[1] = End
+```
+
+We compare the ending coordinates.
+
+Example:
+
+```
+Before sorting:
+
+[[10,16], [2,8], [1,6], [7,12]]
+
+After sorting:
+
+[[1,6], [2,8], [7,12], [10,16]]
+```
+
+Part B – Initialize
+
+```
+int arrows = 1;
+int arrowPos = points[0][1];
+```
+
+The first balloon is:
+
+```
+[1,6]
+```
+
+So:
+
+```
+arrows = 1
+arrowPos = 6
+```
+
+We shoot the first arrow at coordinate 6.
+
+Part C – For loop
+
+```
+for (int i = 1; i < points.length; i++)
+```
+
+We check every remaining balloon.
+
+Part D – Condition
+
+```
+if (points[i][0] > arrowPos)
+```
+
+This checks whether the current balloon starts after the previous arrow position.
+
+- True → Previous arrow cannot burst it.
+- False → Previous arrow can burst it.
+
+Part E – New arrow
+
+```
+arrows++;
+arrowPos = points[i][1];
+```
+
+We increase the arrow count and shoot at the ending coordinate of the current balloon.
+
+Important: When a balloon overlaps with the previous arrow position, we do not update `arrowPos`. We keep shooting at the same coordinate.
+
+## 8. Complete Dry Run – Every Iteration
+
+Let's use:
+
+```
+points = [[10,16], [2,8], [1,6], [7,12]]
+```
+
+### Step 1 – Sorting
+
+Before sorting:
+
+```
+Index 0 → [10,16]
+Index 1 → [2,8]
+Index 2 → [1,6]
+Index 3 → [7,12]
+```
+
+After sorting by ending coordinate:
+
+```
+Index 0 → [1,6]
+Index 1 → [2,8]
+Index 2 → [7,12]
+Index 3 → [10,16]
+```
+
+### Step 2 – Initialization
+
+```
+int arrows = 1;
+int arrowPos = points[0][1];
+```
+
+First balloon:
+
+```
+[1,6]
+```
+
+Therefore:
+
+```
+arrows = 1
+arrowPos = 6
+```
+
+First arrow
+
+# x = 6
+
+The first arrow is placed at the end of [1,6].
+
+### Iteration 1 – i = 1
+
+Current balloon:
+
+```
+points[1] = [2,8];
+```
+
+Extract values:
+
+```
+start = 2
+end = 8
+arrowPos = 6
+arrows = 1
+```
+
+Check:
+
+```
+if (points[1][0] > arrowPos)
+```
+
+Substitute:
+
+```
+2 > 6
+```
+
+Result:
+
+```
+false
+```
+
+Why false?
+
+Because the current balloon starts at 2 and extends up to 8.
+
+The arrow at coordinate 6 lies inside this balloon.
+
+Therefore, the existing arrow bursts it.
+
+No new arrow needed.
+
+Variables remain:
+
+```
+arrows = 1
+arrowPos = 6
+```
+
+### Iteration 2 – i = 2
+
+Current balloon:
+
+```
+points[2] = [7,12];
+```
+
+Extract values:
+
+```
+start = 7
+end = 12
+arrowPos = 6
+arrows = 1
+```
+
+Check:
+
+```
+if (points[2][0] > arrowPos)
+```
+
+Substitute:
+
+```
+7 > 6
+```
+
+Result:
+
+```
+true
+```
+
+Why true?
+
+The balloon starts at coordinate 7.
+
+Our previous arrow was at coordinate 6.
+
+The arrow cannot burst this balloon.
+
+So execute:
+
+```
+arrows++;
+arrowPos = points[2][1];
+```
+
+First:
+
+```
+arrows = 1 + 1 = 2
+```
+
+Next:
+
+```
+arrowPos = 12
+```
+
+Now:
+
+```
+arrows = 2
+arrowPos = 12
+```
+
+Second arrow
+
+# x = 12
+
+A new arrow is placed at the end of [7,12].
+
+### Iteration 3 – i = 3
+
+Current balloon:
+
+```
+points[3] = [10,16];
+```
+
+Extract values:
+
+```
+start = 10
+end = 16
+arrowPos = 12
+arrows = 2
+```
+
+Check:
+
+```
+if (points[3][0] > arrowPos)
+```
+
+Substitute:
+
+```
+10 > 12
+```
+
+Result:
+
+```
+false
+```
+
+Why false?
+
+Because the balloon range is `[10,16]`.
+
+The arrow at coordinate 12 lies inside this balloon.
+
+Therefore, the existing arrow bursts it.
+
+No new arrow needed.
+
+Variables remain:
+
+```
+arrows = 2
+arrowPos = 12
+```
+
+### Final result
+
+```
+return arrows;
+```
+
+Output:
+
+```
+2
+```
+
+## 9. Complete Dry Run Table
+
+Input:
+
+```
+[[10,16], [2,8], [1,6], [7,12]]
+```
+
+After sorting:
+
+```
+[[1,6], [2,8], [7,12], [10,16]]
+```
+
+| Step    | i | Current balloon | arrowPos | Condition       | Action            | arrows |
+| ------- | - | --------------- | -------- | --------------- | ----------------- | ------ |
+| Initial | 0 | `[1,6]`         | 6        | —               | Shoot first arrow | 1      |
+| 1       | 1 | `[2,8]`         | 6        | `2 > 6` false   | Reuse arrow       | 1      |
+| 2       | 2 | `[7,12]`        | 6        | `7 > 6` true    | New arrow at 12   | 2      |
+| 3       | 3 | `[10,16]`       | 12       | `10 > 12` false | Reuse arrow       | 2      |
+
+Final result
+
+Arrow 1 at x = 6
+
+2 balloons
+
+Arrow 2 at x = 12
+
+2 balloons
+
+# Minimum arrows = 2
+
