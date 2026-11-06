@@ -1,10 +1,4 @@
-# LeetCode 452 – Minimum Number of Arrows to Burst Balloons
 
-Greedy Algorithm | Sorting | Interval Scheduling | Medium
-
-Important Greedy Pattern
-
-This problem is closely related to LeetCode 435 – Non-overlapping Intervals. Both use sorting and greedy interval selection, but the goal and overlap handling are slightly different.
 
 ## 1. Problem Statement
 
