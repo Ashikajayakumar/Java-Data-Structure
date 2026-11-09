@@ -1,6 +1,6 @@
 # 🟢 Greedy Algorithm – Array & Local Decisions
 
-This folder contains **8 Greedy Algorithm problems** focused on making optimal local decisions while traversing or modifying arrays and numbers.
+This folder contains **9 Greedy Algorithm problems** focused on making optimal local decisions while traversing or modifying arrays, strings, and numbers.
 
 ## 📚 Problem List
 
@@ -14,6 +14,7 @@ This folder contains **8 Greedy Algorithm problems** focused on making optimal l
 | 06 | 376 | [Wiggle Subsequence](https://github.com/Ashikajayakumar/Java-Data-Structure/blob/main/18.Greedy/02.%20Greedy%20%E2%80%93%20Array%20%26%20Local%20Decisions/06.Wiggle%20Subsequence.md) | Medium | [LeetCode](https://leetcode.com/problems/wiggle-subsequence/) |
 | 07 | 670 | [Maximum Swap](https://github.com/Ashikajayakumar/Java-Data-Structure/blob/main/18.Greedy/02.%20Greedy%20%E2%80%93%20Array%20%26%20Local%20Decisions/07.Maximum%20Swap.md) | Medium | [LeetCode](https://leetcode.com/problems/maximum-swap/) |
 | 08 | 738 | [Monotone Increasing Digits](https://github.com/Ashikajayakumar/Java-Data-Structure/blob/main/18.Greedy/02.%20Greedy%20%E2%80%93%20Array%20%26%20Local%20Decisions/08.Monotone%20Increasing%20Digits.md) | Medium | [LeetCode](https://leetcode.com/problems/monotone-increasing-digits/) |
+| 09 | 2375 | [DI String](https://github.com/Ashikajayakumar/Java-Data-Structure/blob/main/18.Greedy/02.%20Greedy%20%E2%80%93%20Array%20%26%20Local%20Decisions/09.DI%20String.md) | Medium | [LeetCode](https://leetcode.com/problems/construct-smallest-number-from-di-string/) |
 
 ## 🧠 Concepts Covered
 
@@ -27,6 +28,8 @@ This folder contains **8 Greedy Algorithm problems** focused on making optimal l
 - Increasing and decreasing sequences
 - Digit manipulation
 - Right-to-left greedy processing
+- Two-pointer technique (Low and High)
+- Greedy permutation construction
 
 ## 📌 Pattern Recognition
 
@@ -40,12 +43,13 @@ This folder contains **8 Greedy Algorithm problems** focused on making optimal l
 | Find the longest alternating sequence | Direction Change Greedy |
 | Make a number as large as possible with one swap | Digit Greedy |
 | Find the largest number with non-decreasing digits | Right-to-Left Greedy |
+| Construct the smallest permutation satisfying I/D pattern | Two Pointers + Greedy |
 
 ## 📊 Progress Tracker
 
 | Category | Total Questions | Completed |
 |---|:---:|:---:|
-| Greedy – Array & Local Decisions | 8 | 8 |
+| Greedy – Array & Local Decisions | 9 | 9 |
 
 ---
 
