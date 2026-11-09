@@ -43,6 +43,7 @@ This section contains **39 Greedy Algorithm problems** solved using Java, organi
 | 06 | 376 | [Wiggle Subsequence](https://github.com/Ashikajayakumar/Java-Data-Structure/blob/main/18.Greedy/02.%20Greedy%20%E2%80%93%20Array%20%26%20Local%20Decisions/06.Wiggle%20Subsequence.md) | Medium | [Link](https://leetcode.com/problems/wiggle-subsequence/) |
 | 07 | 670 | [Maximum Swap](https://github.com/Ashikajayakumar/Java-Data-Structure/blob/main/18.Greedy/02.%20Greedy%20%E2%80%93%20Array%20%26%20Local%20Decisions/07.Maximum%20Swap.md) | Medium | [Link](https://leetcode.com/problems/maximum-swap/) |
 | 08 | 738 | [Monotone Increasing Digits](https://github.com/Ashikajayakumar/Java-Data-Structure/blob/main/18.Greedy/02.%20Greedy%20%E2%80%93%20Array%20%26%20Local%20Decisions/08.Monotone%20Increasing%20Digits.md) | Medium | [Link](https://leetcode.com/problems/monotone-increasing-digits/) |
+| 09 | 2375 | [DI String](https://github.com/Ashikajayakumar/Java-Data-Structure/blob/main/18.Greedy/02.%20Greedy%20%E2%80%93%20Array%20%26%20Local%20Decisions/09.DI%20String.md) | Medium | [LeetCode](https://leetcode.com/problems/construct-smallest-number-from-di-string/) |
 
 ## 3. Greedy – Interval Scheduling & Merging
 
