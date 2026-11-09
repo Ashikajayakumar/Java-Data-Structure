@@ -7,12 +7,12 @@ This section contains **39 Greedy Algorithm problems** solved using Java, organi
 | No. | Category | Questions |
 |:---:|---|:---:|
 | 01 | [Basic Greedy – Sorting & Selection](#1-basic-greedy--sorting--selection) | 6 |
-| 02 | [Greedy – Array & Local Decisions](#2-greedy--array--local-decisions) | 8 |
+| 02 | [Greedy – Array & Local Decisions](#2-greedy--array--local-decisions) | 9 |
 | 03 | [Greedy – Interval Scheduling & Merging](#3-greedy--interval-scheduling--merging) | 8 |
 | 04 | [Greedy – Jump & Reachability](#4-greedy--jump--reachability) | 4 |
 | 05 | [Greedy – Resource & Frequency Management](#5-greedy--resource--frequency-management) | 7 |
 | 06 | [Greedy – Advanced Patterns](#6-greedy--advanced-patterns) | 6 |
-| | **Total** | **39** |
+| | **Total** | **40** |
 
 ---
 
