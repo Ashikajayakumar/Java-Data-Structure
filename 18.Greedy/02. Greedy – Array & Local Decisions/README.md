@@ -18,7 +18,7 @@ This folder contains **9 Greedy Algorithm problems** focused on making optimal l
 
 ## 🧠 Concepts Covered
 
-- Greedy decision-making
+- Greedy decision-making 
 - Array traversal and optimization
 - Buy and sell stock using local profit
 - Sign flipping and sum maximization
