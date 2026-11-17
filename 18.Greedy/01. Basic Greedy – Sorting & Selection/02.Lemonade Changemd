@@ -1,0 +1,624 @@
+# **LeetCode 860 — Lemonade Change**
+
+## **1. Problem Statement**
+
+You are running a lemonade stand where each lemonade costs **$5**.
+
+Customers stand in a queue and pay one at a time. Each customer pays using one of these bills:
+
+- $5
+- $10
+- $20
+
+You must provide the correct change so that every customer effectively pays exactly $5.
+
+Initially, you have no money in your cash box.
+
+Given an integer array `bills`, return:
+
+- `true` if you can provide correct change to every customer.
+- `false` if you cannot provide change to any customer.
+
+**Important:** Customers must be served in the given order. You cannot rearrange the queue.
+
+### **Example 1**
+
+```
+Input:
+bills = [5, 5, 5, 10, 20]
+
+Output:
+true
+```
+
+Explanation:
+
+| Customer | Payment | Change given | Remaining $5 | Remaining $10 |
+| -------- | ------- | ------------ | ------------ | ------------- |
+| 1        | $5      | $0           | 1            | 0             |
+| 2        | $5      | $0           | 2            | 0             |
+| 3        | $5      | $0           | 3            | 0             |
+| 4        | $10     | $5           | 2            | 1             |
+| 5        | $20     | $10 + $5     | 1            | 0             |
+
+Every customer receives the correct change.
+
+### **Example 2**
+
+```
+Input:
+bills = [5, 5, 10, 10, 20]
+
+Output:
+false
+```
+
+Explanation:
+
+| Customer | Payment | Change given    | Remaining $5 | Remaining $10 |
+| -------- | ------- | --------------- | ------------ | ------------- |
+| 1        | $5      | $0              | 1            | 0             |
+| 2        | $5      | $0              | 2            | 0             |
+| 3        | $10     | $5              | 1            | 1             |
+| 4        | $10     | $5              | 0            | 2             |
+| 5        | $20     | Cannot give $15 | 0            | 2             |
+
+The last customer needs $15 change, but we only have two $10 bills.
+
+Therefore, return `false`.
+
+## **2. Important Points**
+
+1. Lemonade costs $5.
+2. Initially, we have zero $5 and zero $10 bills.
+3. A customer paying $5 does not need change.
+4. A customer paying $10 needs one $5 bill as change.
+5. A customer paying $20 needs $15 change.
+6. We only need to track the number of $5 and $10 bills.
+
+**Why don't we track $20 bills?**
+
+We never use a $20 bill to provide change because the required change is either $5 or $15.
+
+## **3. Main Concept — Greedy Algorithm**
+
+We use a greedy approach to decide which bills to give as change.
+
+There are three possible customer payments.
+
+**Case 1: Customer pays $5**
+
+# **$5**
+
+**No change**
+
+```
+five++;
+```
+
+We simply collect the $5 bill.
+
+**Case 2: Customer pays $10**
+
+# **$10**
+
+**Give $5 change**
+
+```
+if (five == 0) return false;
+
+ten++;
+five--;
+```
+
+We need one $5 bill. If unavailable, return `false`.
+
+**Case 3: Customer pays $20**
+
+# **$20**
+
+**Give $15 change**
+
+We have two choices:
+
+**Choice 1 — Prefer one $10 + one $5**
+
+```
+if (ten > 0 && five > 0) {
+    ten--;
+    five--;
+}
+```
+
+**Choice 2 — Otherwise, use three $5 bills**
+
+```
+else if (five >= 3) {
+    five -= 3;
+}
+```
+
+If neither is possible, return `false`.
+
+## **4. Why Prefer $10 + $5 Over Three $5 Bills?**
+
+This is the most important greedy decision in this problem.
+
+Suppose a customer pays $20.
+
+We need to return $15.
+
+We can provide:
+
+- One $10 + one $5, or
+- Three $5 bills.
+
+**Greedy strategy: Prefer $10 + $5 whenever possible.**
+
+Why?
+
+Because $5 bills are more valuable for future transactions.
+
+For example, a customer paying $10 can only receive one $5 bill as change.
+
+But a $10 bill cannot be used to give change to a customer paying $10.
+
+Therefore, preserve smaller bills whenever possible.
+
+## **5. Complete Java Solution**
+
+Your submitted code is correct. Here is the same solution with standard formatting and comments.
+
+```
+class Solution {
+    public boolean lemonadeChange(int[] bills) {
+
+        int five = 0;
+        int ten = 0;
+
+        for (int i = 0; i < bills.length; i++) {
+
+            if (bills[i] == 5) {
+                five++;
+            }
+
+            else if (bills[i] == 10) {
+
+                if (five == 0) {
+                    return false;
+                }
+
+                ten++;
+                five--;
+            }
+
+            else {
+
+                if (ten > 0 && five > 0) {
+                    ten--;
+                    five--;
+                }
+
+                else if (five >= 3) {
+                    five -= 3;
+                }
+
+                else {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+}
+```
+
+## **6. Understand Your Code — Line by Line**
+
+### **Part A — Initialize variables**
+
+```
+int five = 0, ten = 0;
+```
+
+We maintain two variables:
+
+| Variable | Meaning                       |
+| -------- | ----------------------------- |
+| `five`   | Number of $5 bills available  |
+| `ten`    | Number of $10 bills available |
+
+Initially:
+
+```
+five = 0
+ten  = 0
+```
+
+We have no change in hand.
+
+### **Part B — Traverse the customer queue**
+
+```
+for (int i = 0; i < bills.length; i++)
+```
+
+We process customers one by one in the original order.
+
+`i` represents the current customer's index.
+
+### **Part C — Customer pays $5**
+
+```
+if (bills[i] == 5)
+    five++;
+```
+
+The customer pays exactly the lemonade price.
+
+No change is required.
+
+We increase the number of available $5 bills.
+
+### **Part D — Customer pays $10**
+
+```
+else if (bills[i] == 10) {
+
+    if (five == 0)
+        return false;
+
+    ten++;
+    five--;
+}
+```
+
+The customer needs $5 change.
+
+First, check:
+
+```
+if (five == 0)
+    return false;
+```
+
+If there is no $5 bill, we cannot give change.
+
+Otherwise:
+
+```
+ten++;
+five--;
+```
+
+- Collect one $10 bill.
+- Give one $5 bill as change.
+
+### **Part E — Customer pays $20**
+
+```
+else {
+```
+
+Since the constraints allow only $5, $10 and $20, this branch handles a $20 payment.
+
+The customer needs $15 change.
+
+**First preference:**
+
+```
+if (ten > 0 && five > 0) {
+    ten--;
+    five--;
+}
+```
+
+Check whether we have at least one $10 and one $5 bill.
+
+If yes, use them.
+
+**Second preference:**
+
+```
+else if (five >= 3) {
+    five -= 3;
+}
+```
+
+If the first combination is unavailable, check whether we have at least three $5 bills.
+
+If yes, use three $5 bills.
+
+**Otherwise:**
+
+```
+else {
+    return false;
+}
+```
+
+We cannot provide $15 change, so the transaction fails.
+
+### **Part F — All customers served**
+
+```
+return true;
+```
+
+If the loop completes without returning `false`, every customer received the correct change.
+
+## **7. Complete Dry Run — Iteration by Iteration**
+
+Let's take Example 1.
+
+```
+bills = [5, 5, 5, 10, 20];
+```
+
+Initial state:
+
+```
+five = 0
+ten  = 0
+```
+
+### **Iteration 1**
+
+```
+i = 0
+bills[0] = 5
+```
+
+Condition:
+
+```
+if (bills[i] == 5)
+```
+
+It is true.
+
+Execute:
+
+```
+five++;
+```
+
+State:
+
+```
+Collected: $5
+Change:    $0
+
+five = 1
+ten  = 0
+```
+
+### **Iteration 2**
+
+```
+i = 1
+bills[1] = 5
+```
+
+Again, the customer pays $5.
+
+Execute:
+
+```
+five++;
+```
+
+State:
+
+```
+Collected: $5
+Change:    $0
+
+five = 2
+ten  = 0
+```
+
+### **Iteration 3**
+
+```
+i = 2
+bills[2] = 5
+```
+
+Execute:
+
+```
+five++;
+```
+
+State:
+
+```
+Collected: $5
+Change:    $0
+
+five = 3
+ten  = 0
+```
+
+### **Iteration 4**
+
+```
+i = 3
+bills[3] = 10
+```
+
+Check:
+
+```
+if (bills[i] == 5)
+```
+
+False.
+
+Check:
+
+```
+else if (bills[i] == 10)
+```
+
+True.
+
+Now execute:
+
+```
+if (five == 0)
+```
+
+Current value:
+
+```
+five = 3
+```
+
+Condition is false.
+
+Execute:
+
+```
+ten++;
+five--;
+```
+
+State:
+
+```
+Collected: $10
+Change:    $5
+
+five = 2
+ten  = 1
+```
+
+### **Iteration 5**
+
+```
+i = 4
+bills[4] = 20
+```
+
+The customer pays $20.
+
+We need to return $15.
+
+Check:
+
+```
+if (ten > 0 && five > 0)
+```
+
+Current values:
+
+```
+ten  = 1
+five = 2
+```
+
+Both conditions are true.
+
+Execute:
+
+```
+ten--;
+five--;
+```
+
+We give:
+
+```
+$10 + $5 = $15
+```
+
+Updated state:
+
+```
+five = 1
+ten  = 0
+```
+
+The customer receives the correct change.
+
+### **Loop Completed**
+
+All five customers were served successfully.
+
+Execute:
+
+```
+return true;
+```
+
+Final Output: true
+
+```
+true
+```
+
+## **8. Dry Run Table**
+
+For input:
+
+```
+bills = [5, 5, 5, 10, 20]
+```
+
+| Iteration | `i` | Bill | Action        | `five` | `ten` |
+| --------- | --- | ---- | ------------- | ------ | ----- |
+| Initial   | —   | —    | —             | 0      | 0     |
+| 1         | 0   | 5    | Collect $5    | 1      | 0     |
+| 2         | 1   | 5    | Collect $5    | 2      | 0     |
+| 3         | 2   | 5    | Collect $5    | 3      | 0     |
+| 4         | 3   | 10   | Give $5       | 2      | 1     |
+| 5         | 4   | 20   | Give $10 + $5 | 1      | 0     |
+
+Final result:
+
+```
+true
+```
+
+## **9. Dry Run — When the Answer Is False**
+
+Input:
+
+```
+bills = [5, 5, 10, 10, 20];
+```
+
+| Iteration | Bill | Action          | `five` | `ten` |
+| --------- | ---- | --------------- | ------ | ----- |
+| Initial   | —    | —               | 0      | 0     |
+| 1         | 5    | Collect $5      | 1      | 0     |
+| 2         | 5    | Collect $5      | 2      | 0     |
+| 3         | 10   | Give $5         | 1      | 1     |
+| 4         | 10   | Give $5         | 0      | 2     |
+| 5         | 20   | Cannot give $15 | 0      | 2     |
+
+At iteration 5:
+
+```
+if (ten > 0 && five > 0)
+```
+
+False because `five = 0`.
+
+```
+else if (five >= 3)
+```
+
+False because `five = 0`.
+
+Therefore:
+
+```
+return false;
+```
+
+Final Output: false
+
